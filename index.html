@@ -1,308 +1,341 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rafi Ali Akbar | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
+export default function PortfolioWebsite() {
+  const professionalExperiences = [
+    {
+      title: 'People & Culture Associate',
+      company: 'Bakti Milenial Foundation • Remote',
+      period: 'Jan 2025 - Apr 2025',
+      points: [
+        'Interviewed and assessed 300+ applicants through competency-based and behavioral evaluations.',
+        'Handled recruitment planning for 17 organizational positions through manpower planning.',
+        'Developed role-specific interview questions and evaluation frameworks.',
+        'Collaborated with stakeholders to improve candidate-role alignment.'
+      ]
+    },
+    {
+      title: 'Laboratory Assistant',
+      company: 'CV. Bintang Asri Arthauli • Bandung',
+      period: 'Jul 2025 - Aug 2025',
+      points: [
+        'Prepared equipment and materials for laboratory activities.',
+        'Assisted laboratory analyses and documentation procedures.',
+        'Managed sterilization and inventory for laboratory readiness.'
+      ]
+    },
+    {
+      title: 'Millennial Adjutant of Banyumas Regent',
+      company: 'Banyumas Regent Office • Banyumas',
+      period: 'Nov 2021 - Dec 2021',
+      points: [
+        'Selected as 1 of 10 participants from 200+ applicants.',
+        'Coordinated regional and community events with stakeholders.',
+        'Managed logistical readiness for official activities.'
+      ]
     }
-  </script>
-</head>
-<body class="bg-slate-50 text-slate-800 transition-all duration-500 dark:bg-slate-950 dark:text-white">
+  ];
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-b border-slate-200 dark:border-slate-800 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-bold">Rafi Ali Akbar</h1>
+  const organizationalExperiences = [
+    {
+      title: 'Deputy Head of Human Resource Management',
+      company: 'BEM KMFP Universitas Padjadjaran',
+      period: 'Jan 2024 - Dec 2024',
+      points: [
+        'Led 14 HRM staff members through structured supervision.',
+        'Mentored and evaluated 200+ staff across departments.',
+        'Executed HRM programs involving 200+ participants.'
+      ]
+    },
+    {
+      title: 'Staff of Human Resource Management',
+      company: 'BEM KMFP Universitas Padjadjaran',
+      period: 'Jan 2023 - Dec 2023',
+      points: [
+        'Supported coordination for organizational staff members.',
+        'Provided HR-related evaluations and recommendations.'
+      ]
+    },
+    {
+      title: 'Staff of Event',
+      company: 'PEMIRA KMFP Universitas Padjadjaran',
+      period: 'Oct 2022 - Dec 2022',
+      points: [
+        'Supported campaign, debate, and voting activities.',
+        'Maintained operational timelines and activity flow.'
+      ]
+    }
+  ];
 
-      <div class="flex items-center gap-6 text-sm font-medium">
-        <a href="#about" class="hover:text-slate-500">About</a>
-        <a href="#experience" class="hover:text-slate-500">Experience</a>
-        <a href="#skills" class="hover:text-slate-500">Skills</a>
-        <a href="#contact" class="hover:text-slate-500">Contact</a>
+  const skills = [
+    'Recruitment & Selection',
+    'Talent Acquisition',
+    'Leadership',
+    'Employee Engagement',
+    'Public Speaking',
+    'Stakeholder Management',
+    'Microsoft Excel',
+    'Microsoft Word',
+    'Canva',
+    'Google Workspace',
+    'Google Spreadsheet',
+    'Microsoft Teams'
+  ];
 
-        <button onclick="toggleDarkMode()" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2 rounded-xl">
-          Dark Mode
-        </button>
-      </div>
-    </div>
-  </nav>
+  const stats = [
+    {
+      number: '300+',
+      description: 'Applicants interviewed and assessed'
+    },
+    {
+      number: '200+',
+      description: 'Members mentored and coordinated'
+    },
+    {
+      number: '14+',
+      description: 'HR staff supervised and led'
+    }
+  ];
 
-  <!-- Hero -->
-  <section class="pt-40 pb-24 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle('dark');
+  };
 
-      <div>
-        <div class="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Open to Human Resources Opportunities
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-800 transition-all duration-500 dark:bg-slate-950 dark:text-white">
+      <nav className="fixed left-0 top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-900/80">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <h1 className="text-xl font-bold tracking-wide">Rafi Ali Akbar</h1>
+
+          <div className="hidden items-center gap-6 text-sm font-medium md:flex">
+            <a href="#about" className="transition hover:text-slate-500">
+              About
+            </a>
+            <a href="#experience" className="transition hover:text-slate-500">
+              Experience
+            </a>
+            <a href="#organization" className="transition hover:text-slate-500">
+              Organization
+            </a>
+            <a href="#skills" className="transition hover:text-slate-500">
+              Skills
+            </a>
+            <a href="#contact" className="transition hover:text-slate-500">
+              Contact
+            </a>
+
+            <button
+              type="button"
+              onClick={toggleDarkMode}
+              className="rounded-xl bg-slate-900 px-4 py-2 text-white transition dark:bg-white dark:text-slate-900"
+            >
+              Dark Mode
+            </button>
+          </div>
         </div>
+      </nav>
 
-        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
-          Human Resources & People Development Enthusiast
-        </h1>
+      <section className="px-6 pb-28 pt-40">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
+          <div>
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-medium dark:border-slate-700 dark:bg-slate-900">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500"></span>
+              Open to Human Resources Opportunities
+            </div>
 
-        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8 max-w-xl">
-          Fresh graduate from Universitas Padjadjaran with strong experience in recruitment, people management, organizational development, and leadership.
-        </p>
+            <h1 className="mb-6 text-5xl font-black leading-tight md:text-7xl">
+              Human Resources & People Development Enthusiast
+            </h1>
 
-        <div class="flex flex-wrap gap-4">
-          <a href="#contact" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-7 py-4 rounded-2xl font-semibold hover:scale-105 transition-all duration-300">
-            Contact Me
-          </a>
+            <p className="mb-8 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+              Fresh graduate from Universitas Padjadjaran with experience in people development, recruitment, organizational management, and leadership.
+            </p>
 
-          <a href="cv-rafi-ali-akbar.pdf" download class="border border-slate-300 dark:border-slate-700 px-7 py-4 rounded-2xl font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
-            Download CV
-          </a>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="rounded-2xl bg-slate-900 px-7 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 dark:bg-white dark:text-slate-900"
+              >
+                Contact Me
+              </a>
+
+              <a
+                href="cv-rafi-ali-akbar.pdf"
+                download
+                className="rounded-2xl border border-slate-300 px-7 py-4 font-semibold transition-all duration-300 hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="w-full max-w-md rounded-[2rem] border border-slate-200 bg-white p-6 shadow-2xl transition-all duration-500 hover:-translate-y-2 dark:border-slate-800 dark:bg-slate-900">
+              <img
+                src="rafi-profile.png"
+                alt="Rafi Ali Akbar"
+                className="h-[420px] w-full rounded-3xl object-cover"
+              />
+
+              <div className="pt-6">
+                <h2 className="text-2xl font-bold">Rafi Ali Akbar</h2>
+                <p className="mt-2 text-slate-500 dark:text-slate-400">
+                  Human Resources | People & Culture | Talent Acquisition
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="flex justify-center">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-6 shadow-2xl max-w-md w-full hover:-translate-y-2 transition-all duration-500">
-          <img src="rafi-profile.jpg" alt="Rafi Ali Akbar" class="w-full h-[420px] object-cover rounded-3xl">
-
-          <div class="pt-6">
-            <h2 class="text-2xl font-bold">Rafi Ali Akbar</h2>
-            <p class="text-slate-500 dark:text-slate-400 mt-2">
-              Human Resources | People & Culture | Talent Acquisition
+      <section id="about" className="bg-white px-6 py-24 dark:bg-slate-950">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-black">About Me</h2>
+            <p className="mx-auto max-w-2xl text-slate-500 dark:text-slate-400">
+              Experienced in recruitment, people management, organizational coordination, leadership, and employee engagement.
             </p>
           </div>
+
+          <div className="grid gap-8 md:grid-cols-3">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-8 transition-all hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
+              >
+                <h3 className="mb-4 text-3xl font-bold">{stat.number}</h3>
+                <p className="text-slate-600 dark:text-slate-400">
+                  {stat.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="bg-white dark:bg-slate-950 py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-black mb-4">About Me</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-          Experienced in recruitment, people management, leadership, and organizational development.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-xl transition-all">
-          <h3 class="text-3xl font-bold mb-4">300+</h3>
-          <p class="text-slate-600 dark:text-slate-400">Applicants interviewed and assessed.</p>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-xl transition-all">
-          <h3 class="text-3xl font-bold mb-4">200+</h3>
-          <p class="text-slate-600 dark:text-slate-400">Members mentored and coordinated.</p>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-xl transition-all">
-          <h3 class="text-3xl font-bold mb-4">14+</h3>
-          <p class="text-slate-600 dark:text-slate-400">HR staff led and supervised.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-24 px-6 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-black mb-4">Professional Experience</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-          Experiences in recruitment, people management, organizational development, and operational coordination. Based on resume information provided by the user. 
-        </p>
-      </div>
-
-      <div class="space-y-10">
-
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-3xl font-bold">People & Culture Associate</h3>
-              <p class="text-slate-500 dark:text-slate-400 text-lg">Bakti Milenial Foundation • Remote</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Jan 2025 - Apr 2025
-            </span>
+      <section id="experience" className="bg-slate-50 px-6 py-24 dark:bg-slate-900">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-black">
+              Professional Experience
+            </h2>
           </div>
 
-          <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
-            Supported recruitment and people development processes for social and educational programs focused on empowering young generations.
+          <div className="space-y-10">
+            {professionalExperiences.map((experience, index) => (
+              <div
+                key={index}
+                className="rounded-3xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-950"
+              >
+                <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <h3 className="text-3xl font-bold">{experience.title}</h3>
+                    <p className="text-lg text-slate-500 dark:text-slate-400">
+                      {experience.company}
+                    </p>
+                  </div>
+
+                  <span className="rounded-full bg-slate-100 px-5 py-2 text-sm font-semibold dark:bg-slate-800">
+                    {experience.period}
+                  </span>
+                </div>
+
+                <ul className="list-disc space-y-4 pl-6 leading-relaxed text-slate-600 dark:text-slate-400">
+                  {experience.points.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="organization" className="bg-white px-6 py-24 dark:bg-slate-950">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-black">
+              Organizational Experience
+            </h2>
+          </div>
+
+          <div className="space-y-10">
+            {organizationalExperiences.map((experience, index) => (
+              <div
+                key={index}
+                className="rounded-3xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-800 dark:bg-slate-900"
+              >
+                <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold">{experience.title}</h3>
+                    <p className="text-slate-500 dark:text-slate-400">
+                      {experience.company}
+                    </p>
+                  </div>
+
+                  <span className="rounded-full bg-white px-5 py-2 text-sm font-semibold dark:bg-slate-800">
+                    {experience.period}
+                  </span>
+                </div>
+
+                <ul className="list-disc space-y-4 pl-6 leading-relaxed text-slate-600 dark:text-slate-400">
+                  {experience.points.map((point, pointIndex) => (
+                    <li key={pointIndex}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" className="bg-slate-50 px-6 py-24 dark:bg-slate-900">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <h2 className="mb-4 text-4xl font-black">Skills</h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="rounded-2xl border border-slate-200 bg-white p-5 font-semibold dark:border-slate-800 dark:bg-slate-950"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="bg-white px-6 py-24 dark:bg-slate-950">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mb-6 text-5xl font-black">Let's Connect</h2>
+
+          <p className="mx-auto mb-10 max-w-2xl text-lg text-slate-500 dark:text-slate-400">
+            Open for opportunities in Human Resources, Human Capital, People & Culture, and Management Trainee programs.
           </p>
 
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Interviewed and assessed 300+ applicants for BMNC Batch 4 and partner programs through competency-based and behavioral evaluations.</li>
-            <li>Streamlined recruitment for 17 organizational positions through job analysis and manpower planning.</li>
-            <li>Developed 50+ role-specific interview questions and evaluation frameworks to improve candidate screening consistency.</li>
-            <li>Collaborated with stakeholders to improve candidate-role alignment and organizational workforce allocation.</li>
-          </ul>
-        </div>
+          <div className="flex flex-wrap justify-center gap-5">
+            <a
+              href="mailto:rafialiakbar01@gmail.com"
+              className="rounded-2xl bg-slate-900 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 dark:bg-white dark:text-slate-900"
+            >
+              Email Me
+            </a>
 
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-3xl font-bold">Laboratory Assistant</h3>
-              <p class="text-slate-500 dark:text-slate-400 text-lg">CV. Bintang Asri Arthauli • Bandung</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Jul 2025 - Aug 2025
-            </span>
+            <a
+              href="https://www.linkedin.com/in/rafialiakbar"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-2xl border border-slate-300 px-8 py-4 font-semibold transition-all duration-300 hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800"
+            >
+              LinkedIn
+            </a>
           </div>
-
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Prepared equipment and materials for 20+ laboratory activities supporting operational and research processes.</li>
-            <li>Assisted in 30+ laboratory analyses and documentation procedures using standardized laboratory SOPs.</li>
-            <li>Managed sterilization and inventory for 50+ laboratory items to maintain laboratory readiness and compliance.</li>
-          </ul>
         </div>
+      </section>
 
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-3xl font-bold">Millennial Adjutant of Banyumas Regent</h3>
-              <p class="text-slate-500 dark:text-slate-400 text-lg">Banyumas Regent Office • Banyumas</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Nov 2021 - Dec 2021
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Selected as 1 of 10 participants from 200+ applicants in Banyumas Millennial Innovation Batch 2.</li>
-            <li>Coordinated 10+ regional and community events through stakeholder collaboration and operational preparation.</li>
-            <li>Managed logistical readiness for 20+ official leadership activities to ensure smooth implementation.</li>
-          </ul>
-        </div>
-
-      </div>
+      <footer className="border-t border-slate-200 bg-white py-8 text-center text-slate-500 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-400">
+        © 2026 Rafi Ali Akbar. All Rights Reserved.
+      </footer>
     </div>
-  </section>
-
-  <!-- Organizational Experience -->
-  <section class="py-24 px-6 bg-white dark:bg-slate-950">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-black mb-4">Organizational Experience</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-          Leadership and organizational involvement focused on human resource management, coordination, mentoring, and event operations.
-        </p>
-      </div>
-
-      <div class="space-y-10">
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-2xl font-bold">Deputy Head of Human Resource Management</h3>
-              <p class="text-slate-500 dark:text-slate-400">BEM KMFP Universitas Padjadjaran</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Jan 2024 - Dec 2024
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Led 14 HRM staff members through structured people management and operational supervision.</li>
-            <li>Mentored and evaluated 200+ staff across departments to improve staff development and work climate.</li>
-            <li>Executed 7 HRM programs involving 200+ participants through stakeholder coordination and workforce planning.</li>
-          </ul>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-2xl font-bold">Staff of Human Resource Management</h3>
-              <p class="text-slate-500 dark:text-slate-400">BEM KMFP Universitas Padjadjaran</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Jan 2023 - Dec 2023
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Supported and coordinated 13 External Relations staff members.</li>
-            <li>Provided HR-related evaluations and recommendations to support staff development and departmental effectiveness.</li>
-          </ul>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-            <div>
-              <h3 class="text-2xl font-bold">Chairman</h3>
-              <p class="text-slate-500 dark:text-slate-400">PASKIBRA SMAN 1 Banyumas</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-5 py-2 rounded-full text-sm font-semibold">
-              Oct 2020 - Oct 2021
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed">
-            <li>Led and supervised 28 Paskibra members during one organizational period.</li>
-            <li>Managed organizational programs, operational coordination, and team discipline activities.</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-24 px-6 bg-white dark:bg-slate-950"> class="py-24 px-6 bg-white dark:bg-slate-950">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-black mb-4">Skills</h2>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Recruitment & Selection</div>
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Talent Acquisition</div>
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Leadership</div>
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Employee Engagement</div>
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Microsoft Excel</div>
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 font-semibold">Canva</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-24 px-6 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-5xl font-black mb-6">Let's Connect</h2>
-
-      <p class="text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
-        Open for opportunities in Human Resources, Human Capital, and Management Trainee programs.
-      </p>
-
-      <div class="flex flex-wrap justify-center gap-5">
-        <a href="mailto:rafialiakbar01@gmail.com" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition-all duration-300">
-          Email Me
-        </a>
-
-        <a href="https://www.linkedin.com/in/rafialiakbar" target="_blank" class="border border-slate-300 dark:border-slate-700 px-8 py-4 rounded-2xl font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
-          LinkedIn
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-8 text-center text-slate-500 dark:text-slate-400">
-    © 2026 Rafi Ali Akbar. All Rights Reserved.
-  </footer>
-
-  <script>
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
-
-</body>
-</html>
+  );
+}
