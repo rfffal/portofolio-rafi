@@ -1,707 +1,769 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rafi Ali Akbar | Human Resources Portfolio</title>
+    <!-- ===================================== -->
+    <!-- BASIC META -->
+    <!-- ===================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Professional portfolio of Rafi Ali Akbar focusing on Human Resources, People & Culture, Talent Acquisition, and Management Trainee opportunities." />
+    <title>Rafi Ali Akbar | Human Resources, Talent Acquisition & Management Trainee Portfolio</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Official portfolio of Rafi Ali Akbar. Fresh Graduate from Universitas Padjadjaran with experience in Human Resources, Recruitment, Talent Acquisition, Leadership, People Development, and Organizational Management.">
 
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
+    <meta name="keywords" content="Rafi Ali Akbar, Human Resources, HR, Talent Acquisition, Recruiter, Recruitment, Management Trainee, HRBP, People and Culture, Portfolio">
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    <meta name="author" content="Rafi Ali Akbar">
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta name="robots" content="index,follow">
 
-    .glass {
-      background: rgba(255,255,255,0.75);
-      backdrop-filter: blur(16px);
-    }
+    <link rel="canonical" href="https://rosy.vercel.app/">
 
-    .dark .glass {
-      background: rgba(15,23,42,0.7);
-    }
-  </style>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rafi Ali Akbar | Human Resources Portfolio">
+    <meta property="og:description" content="Human Resources • Talent Acquisition • Leadership • Recruitment • Management Trainee">
+    <meta property="og:image" content="assets/images/rafi-profile.png">
+    <meta property="og:url" content="https://rosy.vercel.app/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rafi Ali Akbar Portfolio">
+    <meta name="twitter:description" content="Human Resources • Talent Acquisition • Recruitment • Leadership">
+    <meta name="twitter:image" content="assets/images/rafi-profile.png">
+
+    <!-- ===================================== -->
+    <!-- GOOGLE FONT -->
+    <!-- ===================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ===================================== -->
+    <!-- FONT AWESOME -->
+    <!-- ===================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ===================================== -->
+    <!-- AOS -->
+    <!-- ===================================== -->
+
+    <link
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- ===================================== -->
+    <!-- CSS -->
+    <!-- ===================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===================================== -->
+    <!-- JSON LD -->
+    <!-- ===================================== -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Person",
+"name":"Rafi Ali Akbar",
+"jobTitle":"Human Resources Enthusiast",
+"description":"Fresh Graduate from Universitas Padjadjaran with experience in Recruitment, Human Resources, Organizational Development and Talent Acquisition.",
+"email":"mailto:rafialiakbar01@gmail.com",
+"telephone":"+6285385511485",
+"url":"https://rosy.vercel.app/",
+"sameAs":[
+"https://www.linkedin.com/in/rafialiakbar"
+]
+}
+</script>
+
 </head>
 
-<body class="bg-slate-50 text-slate-800 transition-all duration-500 dark:bg-slate-950 dark:text-white">
-
-  <!-- Floating Social -->
-  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
-    <a href="mailto:rafialiakbar01@gmail.com" class="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 dark:bg-white dark:text-slate-900">
-      ✉
-    </a>
-
-    <a href="https://www.linkedin.com/in/rafialiakbar" target="_blank" class="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300">
-      in
-    </a>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="fixed top-0 left-0 w-full glass border-b border-slate-200 dark:border-slate-800 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div>
-        <h1 class="text-xl font-bold tracking-wide">Rafi Ali Akbar</h1>
-        <p class="text-sm text-slate-500 dark:text-slate-400">Human Resources Portfolio</p>
-      </div>
-
-      <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
-        <a href="#about" class="hover:text-slate-500 transition">About</a>
-        <a href="#experience" class="hover:text-slate-500 transition">Experience</a>
-        <a href="#organization" class="hover:text-slate-500 transition">Organization</a>
-        <a href="#achievements" class="hover:text-slate-500 transition">Achievements</a>
-        <a href="#skills" class="hover:text-slate-500 transition">Skills</a>
-        <a href="#gallery" class="hover:text-slate-500 transition">Gallery</a>
-        <a href="#contact" class="hover:text-slate-500 transition">Contact</a>
-
-        <button onclick="toggleDarkMode()" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2 rounded-xl transition hover:scale-105">
-          Dark Mode
-        </button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <section class="pt-44 pb-32 px-6 overflow-hidden">
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-
-      <div>
-        <div class="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 px-4 py-2 rounded-full text-sm font-medium mb-8 shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Open to Human Resources & Management Trainee Opportunities
-        </div>
-
-        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-8">
-          Human Resources & People Development Enthusiast
-        </h1>
-
-        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10 max-w-2xl">
-          Fresh graduate from Universitas Padjadjaran with strong experience in recruitment, organizational management, employee engagement, stakeholder coordination, and leadership development. Passionate about Human Resources, Human Capital, People & Culture, Talent Acquisition, and Management Trainee roles.
-        </p>
-
-        <div class="flex flex-wrap gap-5 mb-10">
-          <a href="#contact" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition-all duration-300 shadow-xl">
-            Contact Me
-          </a>
-
-          <a href="cv-rafi-ali-akbar.pdf" download class="border border-slate-300 dark:border-slate-700 px-8 py-4 rounded-2xl font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
-            Download CV
-          </a>
-        </div>
-
-        <div class="grid grid-cols-3 gap-5">
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-sm">
-            <h3 class="text-3xl font-black mb-2">300+</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Applicants Interviewed</p>
-          </div>
-
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-sm">
-            <h3 class="text-3xl font-black mb-2">200+</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">Members Mentored</p>
-          </div>
-
-          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-sm">
-            <h3 class="text-3xl font-black mb-2">14+</h3>
-            <p class="text-sm text-slate-500 dark:text-slate-400">HR Staff Led</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="relative flex justify-center">
-        <div class="absolute w-80 h-80 bg-slate-300 dark:bg-slate-700 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-
-        <div class="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-6 shadow-2xl max-w-md w-full hover:-translate-y-3 transition-all duration-500">
-          <img src="rafi-profile.png" alt="Rafi Ali Akbar" class="w-full h-[520px] object-cover rounded-3xl">
-
-          <div class="pt-8">
-            <h2 class="text-3xl font-bold mb-2">Rafi Ali Akbar</h2>
-            <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
-              Human Resources | People & Culture | Talent Acquisition | Management Trainee Enthusiast
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" class="py-28 px-6 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-20">
-        <h2 class="text-5xl font-black mb-6">Professional Experience</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-4xl mx-auto text-lg leading-relaxed">
-          Professional experiences in recruitment, people development, organizational coordination, leadership, operational support, and stakeholder management.
-        </p>
-      </div>
-
-      <div class="space-y-10">
-
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">People & Culture Associate</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">Bakti Milenial Foundation • Remote</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Jan 2025 - Apr 2025
-            </span>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-10">
-            <div>
-              <h4 class="text-xl font-bold mb-5">Responsibilities</h4>
-
-              <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-                <li>Interviewed and assessed 300+ applicants through competency-based and behavioral evaluations.</li>
-                <li>Handled recruitment planning for 17 organizational positions through workforce allocation and manpower planning.</li>
-                <li>Developed role-specific interview questions and evaluation frameworks.</li>
-                <li>Collaborated with stakeholders to improve organizational effectiveness and candidate-role alignment.</li>
-                <li>Supported employee engagement and people development initiatives.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 class="text-xl font-bold mb-5">Key Contributions</h4>
-
-              <div class="space-y-5">
-                <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">Recruitment Optimization</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Improved recruitment consistency through structured evaluation systems and interview standards.
-                  </p>
-                </div>
-
-                <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">Stakeholder Coordination</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Worked closely with organizational stakeholders to improve workforce planning and team alignment.
-                  </p>
-                </div>
-
-                <div class="bg-slate-50 dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">People Development</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Supported organizational growth through mentoring and engagement initiatives.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">Laboratory Assistant</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">CV. Bintang Asri Arthauli • Bandung</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Jul 2025 - Aug 2025
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
-            <li>Prepared laboratory equipment and materials supporting laboratory operational and research activities.</li>
-            <li>Supported laboratory analyses and documentation procedures using standardized SOPs.</li>
-            <li>Managed sterilization, inventory, and laboratory readiness.</li>
-            <li>Maintained operational efficiency and coordination in laboratory activities.</li>
-          </ul>
-        </div>
-
-        <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 shadow-sm hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">Millennial Adjutant of Banyumas Regent</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">Banyumas Regent Office • Banyumas</p>
-            </div>
-
-            <span class="bg-slate-100 dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Nov 2021 - Dec 2021
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
-            <li>Selected as 1 of 10 participants from 200+ applicants in Banyumas Millennial Innovation Batch 2.</li>
-            <li>Coordinated regional and community events with government stakeholders.</li>
-            <li>Supported operational readiness and logistical preparation for official activities.</li>
-            <li>Participated in youth empowerment and public engagement initiatives.</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Organization -->
-  <section id="organization" class="py-28 px-6 bg-white dark:bg-slate-950">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-20">
-        <h2 class="text-5xl font-black mb-6">Organizational Experience</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-4xl mx-auto text-lg leading-relaxed">
-          Leadership and organizational involvement focused on Human Resource Management, mentoring, communication, coordination, and organizational development.
-        </p>
-      </div>
-
-      <div class="space-y-10">
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">Deputy Head of Human Resource Management</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">BEM KMFP Universitas Padjadjaran</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Jan 2024 - Dec 2024
-            </span>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-10">
-            <div>
-              <h4 class="text-xl font-bold mb-5">Responsibilities</h4>
-
-              <ul class="list-disc pl-6 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed">
-                <li>Led 14 HRM staff members through structured supervision and coordination.</li>
-                <li>Mentored and evaluated 200+ organizational members across departments.</li>
-                <li>Executed HRM programs involving 200+ participants.</li>
-                <li>Managed organizational communication and stakeholder coordination.</li>
-                <li>Supported staff development and organizational performance evaluation.</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 class="text-xl font-bold mb-5">Leadership Highlights</h4>
-
-              <div class="space-y-5">
-                <div class="bg-white dark:bg-slate-950 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">Team Leadership</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Coordinated and supervised HRM staff to maintain effective collaboration and productivity.
-                  </p>
-                </div>
-
-                <div class="bg-white dark:bg-slate-950 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">People Development</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Supported staff growth through mentoring, evaluations, and development initiatives.
-                  </p>
-                </div>
-
-                <div class="bg-white dark:bg-slate-950 rounded-2xl p-5 border border-slate-200 dark:border-slate-800">
-                  <h5 class="font-bold mb-2">Operational Coordination</h5>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    Managed HRM programs and organizational activities involving hundreds of participants.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">Staff of Human Resource Management</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">BEM KMFP Universitas Padjadjaran</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Jan 2023 - Dec 2023
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
-            <li>Supported coordination and communication for organizational staff members.</li>
-            <li>Provided HR-related evaluations and recommendations to improve departmental effectiveness.</li>
-            <li>Collaborated with multiple departments to support organizational operations.</li>
-            <li>Participated in staff development and employee engagement activities.</li>
-          </ul>
-        </div>
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 hover:shadow-2xl transition-all duration-300">
-          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8">
-            <div>
-              <h3 class="text-3xl font-bold mb-2">Chairman</h3>
-              <p class="text-lg text-slate-500 dark:text-slate-400">PASKIBRA SMAN 1 Banyumas</p>
-            </div>
-
-            <span class="bg-white dark:bg-slate-800 px-6 py-3 rounded-full text-sm font-semibold">
-              Oct 2020 - Oct 2021
-            </span>
-          </div>
-
-          <ul class="list-disc pl-6 space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
-            <li>Led and supervised 28 organizational members during one leadership period.</li>
-            <li>Managed discipline systems, operational coordination, and organizational activities.</li>
-            <li>Strengthened teamwork, communication, and leadership culture among members.</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="py-28 px-6 bg-white dark:bg-slate-950">
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-20">
-        <h2 class="text-5xl font-black mb-6">About Me</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-3xl mx-auto text-lg leading-relaxed">
-          Experienced in recruitment, organizational development, people management, employee engagement, mentoring, stakeholder coordination, and operational management through professional and organizational experiences.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-10">
-
-        <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 shadow-sm hover:shadow-xl transition-all duration-300">
-          <h3 class="text-3xl font-bold mb-8">Professional Summary</h3>
-
-          <div class="space-y-5 text-slate-600 dark:text-slate-300 leading-relaxed">
-            <p>
-              Strong interest in Human Resources, Human Capital, People & Culture, and Management Trainee programs with demonstrated experience in recruitment and people development.
-            </p>
-
-            <p>
-              Experienced in interviewing applicants, managing organizational staff, coordinating programs, conducting evaluations, and supporting workforce development initiatives.
-            </p>
-
-            <p>
-              Possess strong communication, leadership, adaptability, and stakeholder management skills developed through academic and organizational involvement.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-6">
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" class="w-14 h-14" alt="Microsoft Excel">
-              <div>
-                <h4 class="font-bold text-lg">Microsoft Excel</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Data processing & reporting</p>
-              </div>
-            </div>
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" class="w-14 h-14" alt="Microsoft Word">
-              <div>
-                <h4 class="font-bold text-lg">Microsoft Word</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Documentation & administration</p>
-              </div>
-            </div>
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/google-sheets.png" class="w-14 h-14" alt="Google Spreadsheet">
-              <div>
-                <h4 class="font-bold text-lg">Google Spreadsheet</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Collaboration & spreadsheet management</p>
-              </div>
-            </div>
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/canva.png" class="w-14 h-14" alt="Canva">
-              <div>
-                <h4 class="font-bold text-lg">Canva</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Presentation & visual design</p>
-              </div>
-            </div>
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/google-logo.png" class="w-14 h-14" alt="Google Workspace">
-              <div>
-                <h4 class="font-bold text-lg">Google Workspace</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Productivity & collaboration tools</p>
-              </div>
-            </div>
-
-            <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex items-center gap-5 hover:-translate-y-2 transition-all duration-300">
-              <img src="https://img.icons8.com/color/96/microsoft-teams.png" class="w-14 h-14" alt="Microsoft Teams">
-              <div>
-                <h4 class="font-bold text-lg">Microsoft Teams</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Virtual meeting & communication</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements -->
-  <section id="achievements" class="py-28 px-6 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-20">
-        <h2 class="text-5xl font-black mb-6">Achievements & Skills</h2>
-        <p class="text-slate-500 dark:text-slate-400 max-w-4xl mx-auto text-lg leading-relaxed">
-          Leadership achievements, scholarship experiences, professional competencies, and productivity tools aligned with Human Resources, People Development, and Management Trainee opportunities.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-12 mb-20">
-
-        <!-- Achievements -->
-        <div>
-          <div class="flex items-center gap-4 mb-10">
-            <div class="w-14 h-14 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center text-2xl shadow-lg">
-              🏆
-            </div>
-
-            <div>
-              <h3 class="text-4xl font-black">Achievements</h3>
-              <p class="text-slate-500 dark:text-slate-400 mt-2">Leadership and organizational accomplishments.</p>
-            </div>
-          </div>
-
-          <div class="space-y-6">
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-              <div class="flex items-center gap-4 mb-5">
-                <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl">
-                  🎓
-                </div>
-
-                <div>
-                  <h4 class="text-2xl font-bold">Scholarship Awardee</h4>
-                  <p class="text-slate-500 dark:text-slate-400 text-sm">Program Cerdas Masjid Kuliah</p>
-                </div>
-              </div>
-
-              <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Awarded scholarship based on academic performance, leadership potential, organizational involvement, and personal development.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-              <div class="flex items-center gap-4 mb-5">
-                <div class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl">
-                  🎤
-                </div>
-
-                <div>
-                  <h4 class="text-2xl font-bold">Guest Speaker Experience</h4>
-                  <p class="text-slate-500 dark:text-slate-400 text-sm">HRM Upgrading Program</p>
-                </div>
-              </div>
-
-              <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Invited as speaker in Human Resource Management development sessions focused on leadership, teamwork, and organizational growth.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl">
-              <div class="flex items-center gap-4 mb-5">
-                <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-2xl">
-                  👥
-                </div>
-
-                <div>
-                  <h4 class="text-2xl font-bold">People Development</h4>
-                  <p class="text-slate-500 dark:text-slate-400 text-sm">Leadership & Mentoring</p>
-                </div>
-              </div>
-
-              <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                Mentored and coordinated 200+ organizational members through Human Resource Management and leadership development programs.
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div>
-          <div class="flex items-center gap-4 mb-10">
-            <div class="w-14 h-14 rounded-2xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center text-2xl shadow-lg">
-              💼
-            </div>
-
-            <div>
-              <h3 class="text-4xl font-black">Skills & Tools</h3>
-              <p class="text-slate-500 dark:text-slate-400 mt-2">Professional competencies and productivity tools.</p>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-6 mb-8">
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
-              <h4 class="text-xl font-bold mb-3">Recruitment & Selection</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Candidate screening, interviewing, and evaluation experience.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
-              <h4 class="text-xl font-bold mb-3">Leadership</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Team supervision, mentoring, and organizational coordination.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
-              <h4 class="text-xl font-bold mb-3">Stakeholder Management</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Communication and collaboration with internal and external stakeholders.
-              </p>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
-              <h4 class="text-xl font-bold mb-3">Public Speaking</h4>
-              <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Experienced in presentations, organizational communication, and speaking forums.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-5">
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex items-center gap-4">
-              <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" class="w-12 h-12" alt="Excel">
-              <div>
-                <h4 class="font-bold">Microsoft Excel</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Reporting & data</p>
-              </div>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex items-center gap-4">
-              <img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" class="w-12 h-12" alt="Word">
-              <div>
-                <h4 class="font-bold">Microsoft Word</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Documentation</p>
-              </div>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex items-center gap-4">
-              <img src="https://img.icons8.com/color/96/google-sheets.png" class="w-12 h-12" alt="Google Sheets">
-              <div>
-                <h4 class="font-bold">Google Spreadsheet</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Collaboration tools</p>
-              </div>
-            </div>
-
-            <div class="bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 flex items-center gap-4">
-              <img src="https://img.icons8.com/color/96/canva.png" class="w-12 h-12" alt="Canva">
-              <div>
-                <h4 class="font-bold">Canva</h4>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Presentation & design</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="py-28 px-6 bg-slate-50 dark:bg-slate-900">
-    <div class="max-w-7xl mx-auto">
-
-      <div class="text-center mb-20">
-        <h2 class="text-5xl font-black mb-6">Gallery</h2>
-      </div>
-
-      <div class="grid lg:grid-cols-3 gap-8">
-
-        <div class="overflow-hidden rounded-[2rem] shadow-xl border border-slate-200 dark:border-slate-800">
-          <img src="organization-1.jpg" class="w-full h-96 object-cover hover:scale-110 transition-all duration-700" alt="Organization Activity">
-        </div>
-
-        <div class="overflow-hidden rounded-[2rem] shadow-xl border border-slate-200 dark:border-slate-800">
-          <img src="organization-2.jpg" class="w-full h-96 object-cover hover:scale-110 transition-all duration-700" alt="Leadership Activity">
-        </div>
-
-        <div class="overflow-hidden rounded-[2rem] shadow-xl border border-slate-200 dark:border-slate-800">
-          <img src="speaker-session.jpg" class="w-full h-96 object-cover hover:scale-110 transition-all duration-700" alt="Speaker Session">
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-28 px-6 bg-white dark:bg-slate-950">
-    <div class="max-w-5xl mx-auto text-center">
-
-      <h2 class="text-6xl font-black mb-8">Let's Connect</h2>
-
-      <p class="text-xl text-slate-500 dark:text-slate-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-        Open for opportunities in Human Resources, Human Capital, People & Culture, Talent Acquisition, Organizational Development, and Management Trainee programs.
-      </p>
-
-      <div class="flex flex-wrap justify-center gap-6 mb-12">
-
-        <a href="mailto:rafialiakbar01@gmail.com" class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-10 py-5 rounded-2xl font-semibold hover:scale-105 transition-all duration-300 shadow-xl">
-          Email Me
-        </a>
-
-        <a href="https://www.linkedin.com/in/rafialiakbar" target="_blank" class="border border-slate-300 dark:border-slate-700 px-10 py-5 rounded-2xl font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300">
-          LinkedIn
-        </a>
-
-      </div>
-
-      <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] p-10 max-w-3xl mx-auto">
-        <h3 class="text-3xl font-bold mb-6">Professional Values</h3>
-
-        <div class="grid md:grid-cols-3 gap-6 text-center">
-
-          <div>
-            <h4 class="text-xl font-bold mb-3">Integrity</h4>
-            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-              Maintaining professionalism and responsibility.
-            </p>
-          </div>
-
-          <div>
-            <h4 class="text-xl font-bold mb-3">Collaboration</h4>
-            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-              Building positive teamwork and communication.
-            </p>
-          </div>
-
-          <div>
-            <h4 class="text-xl font-bold mb-3">Growth</h4>
-            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-              Continuously learning and developing skills.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 py-10 text-center text-slate-500 dark:text-slate-400">
-    <p class="mb-3 font-semibold">© 2026 Rafi Ali Akbar. All Rights Reserved.</p>
-    <p class="text-sm">Designed for Human Resources, People & Culture, and Management Trainee Opportunities.</p>
-  </footer>
-
-  <script>
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-    }
-  </script>
+<body>
+
+<!-- ===================================== -->
+<!-- SCROLL PROGRESS -->
+<!-- ===================================== -->
+
+<div id="progress-bar"></div>
+
+<!-- ===================================== -->
+<!-- BACK TO TOP -->
+<!-- ===================================== -->
+
+<button
+id="backToTop"
+aria-label="Back To Top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ===================================== -->
+<!-- HEADER -->
+<!-- ===================================== -->
+
+<header class="header" id="header">
+
+<div class="container">
+
+<nav class="navbar">
+
+<a href="#home"
+class="logo">
+
+<span>Rafi</span>
+
+<span>Ali Akbar</span>
+
+</a>
+
+<ul class="nav-menu">
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#summary">Summary</a>
+</li>
+
+<li>
+<a href="#experience">Experience</a>
+</li>
+
+<li>
+<a href="#education">Education</a>
+</li>
+
+<li>
+<a href="#publication">Publication</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+<div class="nav-action">
+
+<button
+id="themeToggle"
+aria-label="Toggle Theme">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<a
+href="Resume-Rafi Ali Akbar-3302053103040001.pdf"
+download
+class="btn btn-primary">
+
+Download CV
+
+</a>
+
+<button
+class="mobile-menu"
+id="mobileMenu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ===================================== -->
+<!-- HERO -->
+<!-- ===================================== -->
+
+<main>
+
+<section
+class="hero"
+id="home">
+
+<div class="container">
+
+<div class="hero-grid">
+
+<!-- LEFT -->
+
+<div
+class="hero-content"
+data-aos="fade-right">
+
+<div class="hero-badge">
+
+<span></span>
+
+Open To Human Resources, Talent Acquisition &
+Management Trainee Opportunities
+
+</div>
+
+<h1>
+
+Hi, I'm
+
+<span class="gradient-text">
+
+Rafi Ali Akbar
+
+</span>
+
+</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p>
+
+Fresh Graduate of Agrotechnology from
+Universitas Padjadjaran with hands-on experience
+in Recruitment, Human Resources,
+People Development,
+Leadership,
+Talent Acquisition,
+and Organizational Management.
+
+Experienced in interviewing over
+300 applicants,
+leading HR teams,
+mentoring organizational members,
+and supporting strategic workforce initiatives.
+
+Passionate about creating people-centered
+workplaces that drive organizational excellence.
+
+</p>
+
+<div class="hero-button">
+
+<a
+href="#contact"
+class="btn btn-primary">
+
+Let's Connect
+
+</a>
+
+<a
+href="#experience"
+class="btn btn-secondary">
+
+View Experience
+
+</a>
+
+</div>
+
+<div class="quick-facts">
+
+<div class="fact-card">
+
+<h3>Banyumas</h3>
+
+<p>Central Java</p>
+
+</div>
+
+<div class="fact-card">
+
+<h3>3.76 GPA</h3>
+
+<p>Universitas Padjadjaran</p>
+
+</div>
+
+<div class="fact-card">
+
+<h3>560</h3>
+
+<p>TOEPS Score</p>
+
+</div>
+
+<div class="fact-card">
+
+<h3>Available</h3>
+
+<p>Full Time</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div
+class="hero-image"
+data-aos="fade-left">
+
+<div class="profile-card">
+
+<div class="profile-photo">
+
+<img
+src="rafi-profile.png"
+alt="Professional Photo of Rafi Ali Akbar">
+
+</div>
+
+<div class="profile-content">
+
+<h3>
+
+Rafi Ali Akbar
+
+</h3>
+
+<p>
+
+Human Resources
+
+•
+
+Talent Acquisition
+
+•
+
+People Development
+
+</p>
+
+<div class="availability">
+
+<span class="online"></span>
+
+Available for Work
+
+</div>
+
+</div>
+
+</div>
+
+<div class="dashboard">
+
+<h4>
+
+Recruiter Dashboard
+
+</h4>
+
+<div class="dashboard-grid">
+
+<div class="metric">
+
+<h2
+class="counter"
+data-target="300">
+
+0
+
+</h2>
+
+<p>
+
+Applicants Interviewed
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<h2
+class="counter"
+data-target="17">
+
+0
+
+</h2>
+
+<p>
+
+Positions Managed
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<h2
+class="counter"
+data-target="200">
+
+0
+
+</h2>
+
+<p>
+
+Members Mentored
+
+</p>
+
+</div>
+
+<div class="metric">
+
+<h2
+class="counter"
+data-target="50">
+
+0
+
+</h2>
+
+<p>
+
+Interview Frameworks
+
+</p>
+
+</div>
+
+<div class="metric">
+
+    <h2
+        class="counter"
+        data-target="2">
+
+        0
+
+    </h2>
+
+    <p>
+
+        International Publications
+
+    </p>
+
+</div>
+
+<div class="metric">
+
+    <h2
+        class="counter"
+        data-target="14">
+
+        0
+
+    </h2>
+
+    <p>
+
+        HR Staff Led
+
+    </p>
+
+</div>
+
+<div class="metric">
+
+    <h2>
+
+        3.76
+
+    </h2>
+
+    <p>
+
+        GPA
+
+    </p>
+
+</div>
+
+<div class="metric">
+
+    <h2
+        class="counter"
+        data-target="560">
+
+        0
+
+    </h2>
+
+    <p>
+
+        TOEPS Score
+
+    </p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- FOOTER -->
+<!-- ===================================== -->
+
+<footer
+id="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-about">
+
+<h2>
+
+Rafi Ali Akbar
+
+</h2>
+
+<p>
+
+Fresh Graduate of Agrotechnology from
+Universitas Padjadjaran with practical experience
+in Human Resources,
+Talent Acquisition,
+People Development,
+Leadership,
+Recruitment,
+and Organizational Management.
+
+Committed to continuous learning,
+professional growth,
+and creating positive impact through people-focused
+initiatives.
+
+</p>
+
+</div>
+
+<div class="footer-navigation">
+
+<h3>
+
+Navigation
+
+</h3>
+
+<ul>
+
+<li>
+
+<a href="#home">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#about">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#summary">
+
+Summary
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#experience">
+
+Experience
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#education">
+
+Education
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#publication">
+
+Publication
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>
+
+Get In Touch
+
+</h3>
+
+<div class="footer-item">
+
+<i class="fa-solid fa-envelope"></i>
+
+<a
+href="mailto:rafialiakbar01@gmail.com">
+
+rafialiakbar01@gmail.com
+
+</a>
+
+</div>
+
+<div class="footer-item">
+
+<i class="fa-solid fa-phone"></i>
+
+<a
+href="tel:+6285385511485">
+
++62 853 8551 1485
+
+</a>
+
+</div>
+
+<div class="footer-item">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span>
+
+Banyumas,
+Central Java,
+Indonesia
+
+</span>
+
+</div>
+
+<div class="social-media">
+
+<a
+href="https://www.linkedin.com/in/rafialiakbar"
+target="_blank"
+aria-label="LinkedIn">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+<a
+href="mailto:rafialiakbar01@gmail.com"
+aria-label="Email">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Rafi Ali Akbar.
+All Rights Reserved.
+
+</p>
+
+<p>
+
+Designed & Developed using
+HTML5,
+CSS3,
+Vanilla JavaScript.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+</main>
+
+<!-- ===================================== -->
+<!-- AOS -->
+<!-- ===================================== -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- ===================================== -->
+<!-- SCRIPT -->
+<!-- ===================================== -->
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
