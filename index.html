@@ -1,3151 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-Rafi Ali Akbar | Management Trainee • Human Resources • People Development
-</title>
-
-<meta name="description"
-content="Official portfolio of Rafi Ali Akbar — Fresh Graduate from Universitas Padjadjaran specializing in Human Resources, Management Trainee, Talent Acquisition, People Development, Leadership, Business Operations, and Organizational Excellence.">
-
-<meta name="keywords"
-content="Rafi Ali Akbar, Management Trainee, Human Resources, HR, HRBP, Talent Acquisition, Learning and Development, Graduate Program, Business Development, Business Analyst, Operations, Leadership, Universitas Padjadjaran, Fresh Graduate">
-
-<meta name="author"
-content="Rafi Ali Akbar">
-
-<meta property="og:title"
-content="Rafi Ali Akbar | Human Resources & Management Trainee Portfolio">
-
-<meta property="og:description"
-content="Fresh Graduate with proven leadership, recruitment, organizational development, and business project experience.">
-
-<meta property="og:type"
-content="website">
-
-<meta name="theme-color"
-content="#0f172a">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<script>
-
-tailwind.config = {
-
-darkMode:'class',
-
-theme:{
-
-extend:{
-
-fontFamily:{
-
-sans:['Inter','Arial','sans-serif']
-
-},
-
-colors:{
-
-primary:'#0F172A',
-
-secondary:'#334155',
-
-accent:'#2563EB',
-
-success:'#16A34A'
-
-},
-
-boxShadow:{
-
-premium:'0 30px 80px rgba(15,23,42,.12)',
-
-card:'0 15px 40px rgba(15,23,42,.06)'
-
-}
-
-}
-
-}
-
-}
-
-</script>
-
-<style>
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
-body{
-
-font-family:Arial,Helvetica,sans-serif;
-
-background:#f8fafc;
-
-}
-
-::selection{
-
-background:#0f172a;
-
-color:white;
-
-}
-
-.glass{
-
-background:rgba(255,255,255,.82);
-
-backdrop-filter:blur(22px);
-
-border-bottom:1px solid rgba(226,232,240,.7);
-
-}
-
-.dark .glass{
-
-background:rgba(2,6,23,.85);
-
-border-bottom:1px solid rgba(30,41,59,.7);
-
-}
-
-.section-title{
-
-font-size:clamp(2.3rem,4vw,3.7rem);
-
-font-weight:900;
-
-letter-spacing:-1.6px;
-
-line-height:1.05;
-
-}
-
-.section-subtitle{
-
-max-width:760px;
-
-margin:auto;
-
-font-size:1.08rem;
-
-line-height:1.9;
-
-color:#64748b;
-
-}
-
-.dark .section-subtitle{
-
-color:#94a3b8;
-
-}
-
-.section-space{
-
-padding-top:8rem;
-
-padding-bottom:8rem;
-
-}
-
-.card{
-
-background:white;
-
-border-radius:30px;
-
-border:1px solid #e2e8f0;
-
-box-shadow:0 15px 40px rgba(15,23,42,.05);
-
-transition:.35s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-box-shadow:0 30px 70px rgba(15,23,42,.12);
-
-}
-
-.dark .card{
-
-background:#020617;
-
-border-color:#1e293b;
-
-}
-
-.gradient-text{
-
-background:linear-gradient(90deg,#0f172a,#2563eb);
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
-}
-
-.badge{
-
-display:inline-flex;
-
-align-items:center;
-
-gap:.6rem;
-
-padding:.65rem 1.2rem;
-
-border-radius:999px;
-
-font-size:.86rem;
-
-font-weight:600;
-
-background:white;
-
-border:1px solid #e2e8f0;
-
-box-shadow:0 10px 25px rgba(15,23,42,.05);
-
-}
-
-.dark .badge{
-
-background:#0f172a;
-
-border-color:#334155;
-
-}
-
-.hero-card{
-
-background:white;
-
-border-radius:38px;
-
-border:1px solid #e2e8f0;
-
-box-shadow:0 30px 80px rgba(15,23,42,.08);
-
-}
-
-.dark .hero-card{
-
-background:#020617;
-
-border-color:#1e293b;
-
-}
-
-.stat-card{
-
-border-radius:28px;
-
-background:white;
-
-padding:2rem;
-
-border:1px solid #e2e8f0;
-
-box-shadow:0 15px 40px rgba(15,23,42,.05);
-
-transition:.35s;
-
-}
-
-.stat-card:hover{
-
-transform:translateY(-6px);
-
-}
-
-.dark .stat-card{
-
-background:#020617;
-
-border-color:#1e293b;
-
-}
-
-.timeline-dot{
-
-width:14px;
-
-height:14px;
-
-border-radius:999px;
-
-background:#2563eb;
-
-box-shadow:0 0 0 8px rgba(37,99,235,.10);
-
-}
-
-.soft-bg{
-
-background:linear-gradient(
-180deg,
-#ffffff,
-#f8fafc
-);
-
-}
-
-.dark .soft-bg{
-
-background:#020617;
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rafi Ali Akbar | Human Resources & People Development Portfolio</title>
+  <meta name="description" content="Portfolio of Rafi Ali Akbar — Human Resources, Talent Acquisition, and Management Trainee candidate with hands-on experience assessing 300+ candidates, leading HR teams, and coordinating workforce planning across student and community organizations." />
+
+  <!-- Fonts: Fraunces (display) pairs an editorial, dossier-like seriousness with Inter (body) for clean corporate legibility -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ink: '#101828',
+            'ink-soft': '#1E2A3F',
+            sand: '#FBF8F3',
+            'sand-deep': '#F1EAE0',
+            brass: '#9C7A46',
+            'brass-light': '#C9A66B',
+            sage: '#56634A',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, .font-display { font-family: 'Fraunces', serif; }
+
+    /* Reveal-on-scroll: pure CSS + IntersectionObserver, no framework */
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    .timeline-line { background: linear-gradient(to bottom, transparent, #9C7A46 8%, #9C7A46 92%, transparent); }
+  </style>
 </head>
 
-<!-- ================= HERO ================= -->
-
-<section class="pt-40 pb-32 px-6 relative overflow-hidden soft-bg">
-
-    <div class="absolute -top-32 -right-24 w-[500px] h-[500px] rounded-full bg-blue-200 blur-[130px] opacity-20"></div>
-
-    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-slate-300 blur-[120px] opacity-20"></div>
-
-    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-
-        <!-- LEFT -->
-
-        <div>
-
-            <div class="badge mb-8">
-
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-
-                Available for Graduate Program, Management Trainee & Human Resources Opportunities
-
-            </div>
-
-            <h1 class="text-5xl lg:text-7xl font-black leading-[1.05] tracking-tight mb-8">
-
-                Developing
-
-                <span class="gradient-text">
-
-                    People,
-
-                </span>
-
-                Driving
-
-                <br>
-
-                Organizational
-
-                Excellence.
-
-            </h1>
-
-            <p class="text-xl leading-9 text-slate-600 dark:text-slate-300 max-w-2xl mb-10">
-
-                Fresh Graduate in Agrotechnology from Universitas Padjadjaran with hands-on experience in Talent Acquisition, Recruitment, Leadership, Organizational Development, Business Operations, and Cross-functional Collaboration. Passionate about creating people-focused solutions through analytical thinking, structured execution, and continuous improvement.
-
-            </p>
-
-            <!-- KEYWORDS -->
-
-            <div class="flex flex-wrap gap-3 mb-10">
-
-                <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">
-
-                    Management Trainee
-
-                </span>
-
-                <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">
-
-                    Human Resources
-
-                </span>
-
-                <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">
-
-                    Talent Acquisition
-
-                </span>
-
-                <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">
-
-                    People Development
-
-                </span>
-
-                <span class="px-5 py-2 rounded-full bg-slate-200 dark:bg-slate-800 font-medium">
-
-                    Business Operations
-
-                </span>
-
-            </div>
-
-            <!-- CTA -->
-
-            <div class="flex flex-wrap gap-5 mb-14">
-
-                <a href="#contact"
-
-                    class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-8 py-4 rounded-2xl font-semibold shadow-premium hover:scale-105 transition">
-
-                    Let's Connect
-
-                </a>
-
-                <a href="cv-rafi-ali-akbar.pdf"
-
-                    download
-
-                    class="border border-slate-300 dark:border-slate-700 px-8 py-4 rounded-2xl font-semibold hover:bg-slate-100 dark:hover:bg-slate-900 transition">
-
-                    Download Resume
-
-                </a>
-
-            </div>
-
-            <!-- STATS -->
-
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-
-                <div class="stat-card">
-
-                    <h3 class="text-4xl font-black mb-2">
-
-                        300+
-
-                    </h3>
-
-                    <p class="text-sm text-slate-500">
-
-                        Candidates Assessed
-
-                    </p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3 class="text-4xl font-black mb-2">
-
-                        17
-
-                    </h3>
-
-                    <p class="text-sm text-slate-500">
-
-                        Positions Planned
-
-                    </p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3 class="text-4xl font-black mb-2">
-
-                        200+
-
-                    </h3>
-
-                    <p class="text-sm text-slate-500">
-
-                        Members Mentored
-
-                    </p>
-
-                </div>
-
-                <div class="stat-card">
-
-                    <h3 class="text-4xl font-black mb-2">
-
-                        14
-
-                    </h3>
-
-                    <p class="text-sm text-slate-500">
-
-                        HR Staff Led
-
-                    </p>
-
-                </div>
-
-            </div>
-
+<body class="bg-sand text-ink transition-colors duration-300 dark:bg-[#0B0F17] dark:text-sand">
+
+  <!-- Floating Social -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <a href="mailto:rafialiakbar01@gmail.com" aria-label="Email Rafi" class="w-12 h-12 rounded-full bg-ink text-sand flex items-center justify-center shadow-lg hover:bg-brass transition-colors duration-300 dark:bg-sand dark:text-ink dark:hover:bg-brass dark:hover:text-sand">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/rafialiakbar" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-12 h-12 rounded-full bg-ink text-sand flex items-center justify-center shadow-lg hover:bg-brass transition-colors duration-300 dark:bg-sand dark:text-ink dark:hover:bg-brass dark:hover:text-sand">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.5h4.5V23H.24V8.5zM8.5 8.5h4.3v1.98h.06c.6-1.12 2.06-2.3 4.24-2.3 4.53 0 5.37 2.98 5.37 6.86V23h-4.5v-6.98c0-1.66-.03-3.8-2.32-3.8-2.32 0-2.68 1.8-2.68 3.68V23h-4.5V8.5z"/></svg>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-50 border-b border-transparent bg-sand/95 dark:bg-[#0B0F17]/95 backdrop-blur transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="group">
+        <h1 class="text-lg font-display font-semibold tracking-tight">Rafi Ali Akbar</h1>
+        <p class="text-[11px] uppercase tracking-[0.18em] text-ink/50 dark:text-sand/50">Human Resources Portfolio</p>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-brass transition-colors">About</a>
+        <a href="#experience" class="hover:text-brass transition-colors">Experience</a>
+        <a href="#organization" class="hover:text-brass transition-colors">Organization</a>
+        <a href="#achievements" class="hover:text-brass transition-colors">Achievements</a>
+        <a href="#skills" class="hover:text-brass transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-brass transition-colors">Contact</a>
+
+        <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="w-9 h-9 rounded-full border border-ink/15 dark:border-sand/20 flex items-center justify-center hover:border-brass hover:text-brass transition-colors">
+          <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+      </div>
+
+      <button onclick="toggleDarkMode()" aria-label="Toggle dark mode" class="lg:hidden w-9 h-9 rounded-full border border-ink/15 dark:border-sand/20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="top" class="pt-40 pb-24 px-6">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
+
+      <div>
+        <div class="inline-flex items-center gap-2 border border-brass/40 text-brass px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-8">
+          <span class="w-1.5 h-1.5 rounded-full bg-brass"></span>
+          Open to Human Resources & Management Trainee Programs
         </div>
 
-        <!-- RIGHT -->
-
-        <div class="relative flex justify-center">
-
-            <div class="hero-card p-8 max-w-md w-full">
-
-                <img
-
-                    src="rafi-profile.png"
-
-                    class="rounded-[28px] w-full h-[560px] object-cover"
-
-                    alt="Rafi Ali Akbar">
-
-                <div class="pt-8">
-
-                    <h2 class="text-4xl font-black mb-2">
-
-                        Rafi Ali Akbar
-
-                    </h2>
-
-                    <p class="text-slate-500 dark:text-slate-400 leading-8">
-
-                        Human Resources • Management Trainee • Talent Acquisition • People Development
-
-                    </p>
-
-                    <div class="mt-8 grid gap-4">
-
-                        <div class="flex justify-between">
-
-                            <span class="text-slate-500">
-
-                                Education
-
-                            </span>
-
-                            <span class="font-semibold">
-
-                                Universitas Padjadjaran
-
-                            </span>
-
-                        </div>
-
-                        <div class="flex justify-between">
-
-                            <span class="text-slate-500">
-
-                                GPA
-
-                            </span>
-
-                            <span class="font-semibold">
-
-                                3.76 / 4.00
-
-                            </span>
-
-                        </div>
-
-                        <div class="flex justify-between">
-
-                            <span class="text-slate-500">
-
-                                Location
-
-                            </span>
-
-                            <span class="font-semibold">
-
-                                Central Java, Indonesia
-
-                            </span>
-
-                        </div>
-
-                        <div class="flex justify-between">
-
-                            <span class="text-slate-500">
-
-                                Languages
-
-                            </span>
-
-                            <span class="font-semibold">
-
-                                Indonesian • English
-
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- FLOATING CARD -->
-
-            <div class="hidden xl:block absolute -left-12 bottom-10 bg-white dark:bg-slate-900 rounded-3xl shadow-premium border border-slate-200 dark:border-slate-800 p-6 w-72">
-
-                <div class="text-sm text-slate-500 mb-3">
-
-                    Recruiter Snapshot
-
-                </div>
-
-                <div class="space-y-3">
-
-                    <div class="flex items-center gap-3">
-
-                        ✅ Leadership Experience
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        ✅ Recruitment Experience
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        ✅ Business & Operations Mindset
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        ✅ Analytical Problem Solver
-
-                    </div>
-
-                    <div class="flex items-center gap-3">
-
-                        ✅ Graduate Program Ready
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <h1 class="text-4xl md:text-6xl font-display font-semibold leading-[1.1] mb-6">
+          I build the structure behind good&nbsp;people&nbsp;decisions.
+        </h1>
+
+        <p class="text-base md:text-lg text-ink/70 dark:text-sand/70 leading-relaxed mb-10 max-w-xl">
+          Fresh graduate in Agrotechnology from Universitas Padjadjaran (GPA 3.76/4.00) with hands-on experience across recruitment, workforce planning, and people development — assessing 300+ candidates, coordinating hiring for 17 positions, and leading HR initiatives that reached 200+ members.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mb-14">
+          <a href="#contact" class="bg-ink text-sand dark:bg-sand dark:text-ink px-7 py-3.5 rounded-md font-semibold text-sm hover:bg-brass dark:hover:bg-brass dark:hover:text-sand transition-colors duration-300">
+            Get in Touch
+          </a>
+          <a href="cv-rafi-ali-akbar.pdf" download class="border border-ink/20 dark:border-sand/25 px-7 py-3.5 rounded-md font-semibold text-sm hover:border-brass hover:text-brass transition-colors duration-300">
+            Download CV
+          </a>
         </div>
+
+        <div class="grid grid-cols-3 gap-8 border-t border-ink/10 dark:border-sand/10 pt-8">
+          <div>
+            <h3 class="text-3xl font-display font-semibold text-brass mb-1">300+</h3>
+            <p class="text-xs uppercase tracking-wide text-ink/50 dark:text-sand/50">Candidates Assessed</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-display font-semibold text-brass mb-1">17</h3>
+            <p class="text-xs uppercase tracking-wide text-ink/50 dark:text-sand/50">Positions Recruited</p>
+          </div>
+          <div>
+            <h3 class="text-3xl font-display font-semibold text-brass mb-1">200+</h3>
+            <p class="text-xs uppercase tracking-wide text-ink/50 dark:text-sand/50">Members Mentored</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative reveal">
+        <div class="absolute -inset-4 border border-brass/30 rounded-2xl -z-10"></div>
+        <div class="bg-white dark:bg-ink-soft rounded-2xl overflow-hidden shadow-2xl">
+          <img src="rafi-profile.png" alt="Rafi Ali Akbar" class="w-full h-[480px] object-cover">
+          <div class="p-7 border-t border-ink/10 dark:border-sand/10">
+            <h2 class="text-2xl font-display font-semibold mb-1">Rafi Ali Akbar</h2>
+            <p class="text-sm text-ink/60 dark:text-sand/60">Human Resources · People & Culture · Talent Acquisition</p>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <!-- About -->
+  <section id="about" class="py-24 px-6 bg-white dark:bg-ink-soft/40 border-y border-ink/10 dark:border-sand/10">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-[0.35fr_0.65fr] gap-14">
 
-<!-- ================= NAVBAR ================= -->
+      <div>
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">About</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold leading-tight">Professional Summary</h2>
+      </div>
 
-<nav class="fixed top-0 left-0 w-full glass z-50">
+      <div class="space-y-6 text-ink/75 dark:text-sand/75 leading-relaxed">
+        <p>
+          My work sits at the intersection of people and process: interviewing and assessing candidates, translating workforce needs into structured hiring plans, and mentoring teams through their own performance cycles. Across four organizational leadership roles and two professional placements, I've learned that good HR outcomes come from disciplined systems, not improvisation.
+        </p>
+        <p>
+          My academic background in Agrotechnology adds a distinct edge — comfort with data, fieldwork rigor, and cross-functional operations that translates directly to FMCG and consulting environments where HR and business operations meet.
+        </p>
+        <div class="flex flex-wrap gap-2.5 pt-2">
+          <span class="px-4 py-1.5 rounded-full text-xs font-medium border border-ink/15 dark:border-sand/20">Talent Acquisition</span>
+          <span class="px-4 py-1.5 rounded-full text-xs font-medium border border-ink/15 dark:border-sand/20">Workforce Planning</span>
+          <span class="px-4 py-1.5 rounded-full text-xs font-medium border border-ink/15 dark:border-sand/20">People Development</span>
+          <span class="px-4 py-1.5 rounded-full text-xs font-medium border border-ink/15 dark:border-sand/20">Stakeholder Management</span>
+          <span class="px-4 py-1.5 rounded-full text-xs font-medium border border-ink/15 dark:border-sand/20">Data-Driven Decision Making</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+  <!-- Experience -->
+  <section id="experience" class="py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">Career</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-4">Professional Experience</h2>
+        <p class="text-ink/60 dark:text-sand/60 max-w-2xl leading-relaxed">
+          Placements in recruitment, laboratory operations, agronomy, and public-sector coordination — each contributing a different discipline to how I approach people and process.
+        </p>
+      </div>
 
-        <!-- LOGO -->
+      <div class="relative pl-10 md:pl-14">
+        <div class="absolute left-[7px] md:left-[11px] top-2 bottom-2 w-px timeline-line"></div>
+
+        <!-- 1 -->
+        <div class="relative mb-16 reveal">
+          <span class="absolute -left-10 md:-left-14 top-1 w-4 h-4 rounded-full bg-brass ring-4 ring-sand dark:ring-[#0B0F17]"></span>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-2xl font-display font-semibold">People & Culture Associate</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">Bakti Milenial Foundation · Remote</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Jan 2025 – Apr 2025</span>
+          </div>
+          <ul class="space-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Assessed 300+ applicants through competency-based and behavioral interviews, contributing to higher-quality candidate selection across foundation and partner programs.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Streamlined recruitment for 17 organizational positions, improving workload distribution through job analysis and manpower planning.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Developed 50+ role-specific interview questions and evaluation frameworks, increasing screening consistency across teams.</li>
+          </ul>
+        </div>
+
+        <!-- 2 -->
+        <div class="relative mb-16 reveal">
+          <span class="absolute -left-10 md:-left-14 top-1 w-4 h-4 rounded-full bg-brass ring-4 ring-sand dark:ring-[#0B0F17]"></span>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-2xl font-display font-semibold">Laboratory Assistant</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">CV. Bintang Asri Arthauli · Bandung, Jawa Barat</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Jul 2025 – Aug 2025</span>
+          </div>
+          <ul class="space-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Maintained operational readiness by preparing equipment and materials for 20+ laboratory activities supporting research and analytical testing.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Performed and documented 30+ analyses following standardized procedures to ensure data accuracy and reliable reporting.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Controlled sterilization and inventory for 50+ laboratory assets, maintaining SOP compliance and continuous equipment availability.</li>
+          </ul>
+        </div>
+
+        <!-- 3 -->
+        <div class="relative mb-16 reveal">
+          <span class="absolute -left-10 md:-left-14 top-1 w-4 h-4 rounded-full bg-brass ring-4 ring-sand dark:ring-[#0B0F17]"></span>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-2xl font-display font-semibold">Agronomist Intern</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">PT Habibi Digital Nusantara · Bandung, Jawa Barat</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Jul 2024 – Aug 2024</span>
+          </div>
+          <ul class="space-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Monitored 750+ cherry tomato and chili pepper plants across three cultivation zones through routine inspections, disease scouting, and heat-map observations.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Coordinated preparation of 250+ polybag growing media and transplanting activities across three crop varieties to support uniform crop establishment.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Executed 20+ greenhouse operations — irrigation, fertilization, sanitation, pest management — ensuring efficient daily cultivation processes.</li>
+          </ul>
+        </div>
+
+        <!-- 4 -->
+        <div class="relative reveal">
+          <span class="absolute -left-10 md:-left-14 top-1 w-4 h-4 rounded-full bg-brass ring-4 ring-sand dark:ring-[#0B0F17]"></span>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
+            <div>
+              <h3 class="text-2xl font-display font-semibold">Millennial Adjutant of Banyumas Regent</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">Banyumas Regent Office · Banyumas, Jawa Tengah</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Nov 2021 – Dec 2021</span>
+          </div>
+          <ul class="space-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Selected as 1 of 10 participants from 200+ applicants for the Banyumas Millennial Innovation Batch 2 program.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Coordinated 10+ regional and community events through stakeholder collaboration and event preparation.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Managed logistical readiness for 20+ official leadership activities, ensuring requirements were met on schedule.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization -->
+  <section id="organization" class="py-28 px-6 bg-white dark:bg-ink-soft/40 border-y border-ink/10 dark:border-sand/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">Leadership</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-4">Organizational Experience</h2>
+        <p class="text-ink/60 dark:text-sand/60 max-w-2xl leading-relaxed">
+          Five years of consecutive leadership roles in human resource management, logistics, and event coordination — the throughline is structured people management.
+        </p>
+      </div>
+
+      <div class="space-y-6">
+
+        <div class="border border-ink/10 dark:border-sand/15 rounded-xl p-8">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-6">
+            <div>
+              <h3 class="text-xl font-display font-semibold">Deputy Head of Human Resource Management</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">BEM KMFP Universitas Padjadjaran</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Jan 2024 – Dec 2024</span>
+          </div>
+          <ul class="grid md:grid-cols-2 gap-x-8 gap-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Led 14 HRM staff through structured supervision and coordination.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Mentored and evaluated 200+ members across departments.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Executed 7 HRM programs reaching 200+ participants.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Managed organizational communication and stakeholder coordination.</li>
+          </ul>
+        </div>
+
+        <div class="border border-ink/10 dark:border-sand/15 rounded-xl p-8">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-6">
+            <div>
+              <h3 class="text-xl font-display font-semibold">Staff of Human Resource Management</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">BEM KMFP Universitas Padjadjaran</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Jan 2023 – Dec 2023</span>
+          </div>
+          <ul class="grid md:grid-cols-2 gap-x-8 gap-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Supported and coordinated 13 External Relations staff.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Provided HR evaluations and recommendations to department stakeholders.</li>
+          </ul>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="border border-ink/10 dark:border-sand/15 rounded-xl p-8">
+            <div class="flex items-baseline justify-between gap-2 mb-4">
+              <h3 class="text-lg font-display font-semibold">Staff of Logistic</h3>
+              <span class="text-xs font-semibold uppercase tracking-wide text-brass">Aug – Nov 2023</span>
+            </div>
+            <p class="text-ink/55 dark:text-sand/55 text-sm mb-4">PAB Acretion, Universitas Padjadjaran</p>
+            <p class="text-ink/75 dark:text-sand/75 leading-relaxed text-sm">Coordinated logistics planning, procurement, and distribution across 3+ event stages, resolving on-site issues to support smooth execution.</p>
+          </div>
+
+          <div class="border border-ink/10 dark:border-sand/15 rounded-xl p-8">
+            <div class="flex items-baseline justify-between gap-2 mb-4">
+              <h3 class="text-lg font-display font-semibold">Staff of Event</h3>
+              <span class="text-xs font-semibold uppercase tracking-wide text-brass">Oct – Dec 2022</span>
+            </div>
+            <p class="text-ink/55 dark:text-sand/55 text-sm mb-4">Pemira KMFP, Universitas Padjadjaran</p>
+            <p class="text-ink/75 dark:text-sand/75 leading-relaxed text-sm">Supported 3+ election stages — campaign, debate, and voting — maintaining operational timelines for organized, efficient implementation.</p>
+          </div>
+        </div>
+
+        <div class="border border-ink/10 dark:border-sand/15 rounded-xl p-8">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-6">
+            <div>
+              <h3 class="text-xl font-display font-semibold">Chairman</h3>
+              <p class="text-ink/55 dark:text-sand/55 text-sm">Paskibra SMAN 1 Banyumas</p>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wide text-brass">Oct 2020 – Oct 2021</span>
+          </div>
+          <ul class="grid md:grid-cols-2 gap-x-8 gap-y-3 text-ink/75 dark:text-sand/75 leading-relaxed text-sm">
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Served as Commander for one organizational period, leading overall team coordination.</li>
+            <li class="flex gap-3"><span class="text-brass mt-1.5">—</span>Led and supervised 28 members, ensuring smooth execution of work programs.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">Recognition</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-4">Achievements & Credentials</h2>
+        <p class="text-ink/60 dark:text-sand/60 max-w-2xl leading-relaxed">
+          Certifications, published research, and recognitions earned alongside professional and organizational work.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-10">
 
         <div>
-
-            <h1 class="text-2xl font-black tracking-tight">
-
-                Rafi Ali Akbar
-
-            </h1>
-
-            <p class="text-sm text-slate-500">
-
-                Management Trainee • Human Resources
-
-            </p>
-
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink/50 dark:text-sand/50 mb-5 pb-3 border-b border-ink/10 dark:border-sand/15">Certifications & Training</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="font-semibold text-sm mb-1">HR & Talent Acquisition Bootcamp</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">Eduwork · 2026</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Recruitment & Selection, HRBP, HRIS, KPI–OKR, Talent Management, SOP Development.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">Microsoft Excel for Human Resources</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">Eduwork · 2026</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">HR Analytics, Pivot Tables, Dashboards, HR Metrics, Data Visualization.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">TOEPS PBT (TOEFL Prediction)</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">2026</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Score: 560</p>
+            </div>
+          </div>
         </div>
 
-        <!-- MENU -->
-
-        <div class="hidden lg:flex items-center gap-8 text-[15px] font-semibold">
-
-            <a href="#about" class="hover:text-blue-600 transition">
-
-                About
-
-            </a>
-
-            <a href="#experience" class="hover:text-blue-600 transition">
-
-                Experience
-
-            </a>
-
-            <a href="#projects" class="hover:text-blue-600 transition">
-
-                Projects
-
-            </a>
-
-            <a href="#organization" class="hover:text-blue-600 transition">
-
-                Leadership
-
-            </a>
-
-            <a href="#achievements" class="hover:text-blue-600 transition">
-
-                Achievements
-
-            </a>
-
-            <a href="#skills" class="hover:text-blue-600 transition">
-
-                Skills
-
-            </a>
-
-            <a href="#contact" class="hover:text-blue-600 transition">
-
-                Contact
-
-            </a>
-
-            <button
-
-                onclick="toggleDarkMode()"
-
-                class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-5 py-3 rounded-xl hover:scale-105 transition">
-
-                Dark Mode
-
-            </button>
-
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink/50 dark:text-sand/50 mb-5 pb-3 border-b border-ink/10 dark:border-sand/15">Academic & Publications</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="font-semibold text-sm mb-1">First Author, International Journal (IJLSAR)</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">2026</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Peer-reviewed review article on nano-coated biofertilizers for sustainable agriculture.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">Co-Author, International Journal (ARJA)</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">2026</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Peer-reviewed review article on beneficial microbes for soil health and crop productivity.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">PCMK Scholarship Awardee</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">2025</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Selected based on academic performance and organizational involvement.</p>
+            </div>
+          </div>
         </div>
 
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink/50 dark:text-sand/50 mb-5 pb-3 border-b border-ink/10 dark:border-sand/15">Awards & Recognition</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="font-semibold text-sm mb-1">Guest Speaker, HRM Upgrading Program</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">BEM KMFP Unpad · 2025</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Invited speaker on Human Resource Management development.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">1st Runner-Up, Innovation Competition</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">BEM SV IPB University · 2023</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">"Plant Treasure For Next Generation" reforestation infographic — West Java provincial level.</p>
+            </div>
+            <div>
+              <p class="font-semibold text-sm mb-1">Best Staff of the Month, HRM</p>
+              <p class="text-xs text-ink/50 dark:text-sand/50 mb-2">BEM KMFP Unpad · 2023</p>
+              <p class="text-sm text-ink/70 dark:text-sand/70 leading-relaxed">Awarded for the April 2023 period.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-</nav>
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section-space px-6 bg-white dark:bg-slate-950">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-20">
-
-<span class="badge mb-6">
-
-Professional Profile
-
-</span>
-
-<h2 class="section-title mb-8">
-
-More Than an HR Enthusiast—
-
-<br>
-
-A Future Business Leader.
-
-</h2>
-
-<p class="section-subtitle">
-
-I combine people-centric thinking with analytical problem-solving, operational discipline, and leadership experience to create measurable organizational impact. My experiences across recruitment, organizational development, research, and cross-functional projects have strengthened my ability to adapt quickly, collaborate effectively, and deliver results in dynamic environments.
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-5 gap-10">
-
-<!-- LEFT -->
-
-<div class="lg:col-span-3">
-
-<div class="card p-10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Executive Summary
-
-</h3>
-
-<div class="space-y-6 text-lg leading-9 text-slate-600 dark:text-slate-300">
-
-<p>
-
-Fresh Graduate from <strong>Universitas Padjadjaran</strong> with proven experience in Talent Acquisition, Recruitment, Human Resource Management, Organizational Development, Leadership, Business Operations, and Project Coordination.
-
-</p>
-
-<p>
-
-Interviewed and evaluated more than <strong>300 candidates</strong>, contributed to workforce planning across <strong>17 organizational positions</strong>, led teams of <strong>14 HR staff</strong>, and mentored more than <strong>200 members</strong> through structured development initiatives.
-
-</p>
-
-<p>
-
-Beyond Human Resources, I have developed a strong analytical foundation through research, operational projects, and cross-functional collaboration—allowing me to solve problems systematically, make data-informed decisions, and execute initiatives with attention to detail.
-
-</p>
-
-<p>
-
-Currently seeking opportunities in <strong>Management Trainee</strong>, <strong>Human Resources</strong>, <strong>People Development</strong>, <strong>Business Operations</strong>, and <strong>Corporate Leadership Development Programs</strong> where I can contribute, learn rapidly, and grow into a future business leader.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RIGHT -->
-
-<div class="lg:col-span-2 space-y-6">
-
-<div class="card p-8">
-
-<h3 class="text-2xl font-black mb-6">
-
-Core Strengths
-
-</h3>
-
-<div class="space-y-4">
-
-<div class="flex justify-between">
-
-<span>
-
-Leadership
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<div class="flex justify-between">
-
-<span>
-
-Communication
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<div class="flex justify-between">
-
-<span>
-
-Analytical Thinking
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<div class="flex justify-between">
-
-<span>
-
-Stakeholder Management
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<div class="flex justify-between">
-
-<span>
-
-Project Coordination
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<div class="flex justify-between">
-
-<span>
-
-Problem Solving
-
-</span>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card p-8">
-
-<h3 class="text-2xl font-black mb-6">
-
-Career Interests
-
-</h3>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Management Trainee
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Human Resources
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-HRBP
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Talent Acquisition
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Learning & Development
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Business Development
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Business Analyst
-
-</span>
-
-<span class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800">
-
-Operations
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- VALUE CARDS -->
-
-<div class="grid md:grid-cols-2 xl:grid-cols-4 gap-7 mt-14">
-
-<div class="card p-8">
-
-<h3 class="text-xl font-bold mb-4">
-
-Leadership
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Led cross-functional teams, supervised HR staff, and coordinated organizational initiatives involving hundreds of participants.
-
-</p>
-
-</div>
-
-<div class="card p-8">
-
-<h3 class="text-xl font-bold mb-4">
-
-People Development
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Designed development initiatives, mentoring programs, and structured evaluations to support individual and team growth.
-
-</p>
-
-</div>
-
-<div class="card p-8">
-
-<h3 class="text-xl font-bold mb-4">
-
-Business Mindset
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Experienced in planning, execution, coordination, and continuous improvement with a focus on measurable outcomes.
-
-</p>
-
-</div>
-
-<div class="card p-8">
-
-<h3 class="text-xl font-bold mb-4">
-
-Analytical Thinking
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Strong quantitative and research background with experience translating data into practical recommendations.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-
-<section id="experience" class="section-space px-6 bg-slate-50 dark:bg-slate-900">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-20">
-
-<span class="badge mb-6">
-
-Professional Experience
-
-</span>
-
-<h2 class="section-title mb-8">
-
-Creating Impact Through
-
-<br>
-
-People, Projects & Operations
-
-</h2>
-
-<p class="section-subtitle">
-
-My professional experiences have strengthened my capabilities in talent acquisition, leadership, business operations, stakeholder management, project execution, and continuous improvement across academic, organizational, and professional environments.
-
-</p>
-
-</div>
-
-<div class="space-y-10">
-
-<!-- ========================== -->
-
-<!-- PEOPLE & CULTURE -->
-
-<!-- ========================== -->
-
-<div class="card p-10">
-
-<div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-6 mb-10">
-
-<div>
-
-<span class="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-700 font-semibold mb-5">
-
-Most Relevant Experience
-
-</span>
-
-<h3 class="text-4xl font-black">
-
-People & Culture Associate
-
-</h3>
-
-<p class="text-lg text-slate-500 mt-3">
-
-Bakti Milenial Foundation • Remote
-
-</p>
-
-</div>
-
-<div class="text-right">
-
-<div class="font-semibold">
-
-Jan 2025 – Apr 2025
-
-</div>
-
-<div class="text-slate-500 mt-2">
-
-Human Resources
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-<!-- LEFT -->
-
-<div class="lg:col-span-2">
-
-<h4 class="text-2xl font-bold mb-6">
-
-Key Contributions
-
-</h4>
-
-<ul class="space-y-5 text-slate-600 dark:text-slate-300 leading-8">
-
-<li>
-
-<strong>Conducted competency-based interviews for 300+ applicants</strong>, supporting data-driven hiring decisions and improving candidate-role alignment.
-
-</li>
-
-<li>
-
-Developed structured interview guides and evaluation frameworks for more than <strong>50 recruitment questions</strong>, increasing assessment consistency.
-
-</li>
-
-<li>
-
-Collaborated with stakeholders to execute workforce planning across <strong>17 organizational positions</strong>, supporting recruitment prioritization and organizational effectiveness.
-
-</li>
-
-<li>
-
-Partnered with department leaders to improve recruitment quality, communication flow, and hiring coordination.
-
-</li>
-
-<li>
-
-Supported employee engagement and organizational development initiatives focused on collaboration and continuous improvement.
-
-</li>
-
-</ul>
-
-</div>
-
-<!-- RIGHT -->
-
-<div>
-
-<div class="bg-slate-100 dark:bg-slate-950 rounded-3xl p-7">
-
-<h4 class="font-black text-xl mb-5">
-
-Business Impact
-
-</h4>
-
-<div class="space-y-5 text-sm">
-
-<div>
-
-<div class="font-semibold">
-
-300+
-
-</div>
-
-<div class="text-slate-500">
-
-Candidates Assessed
-
-</div>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-17
-
-</div>
-
-<div class="text-slate-500">
-
-Hiring Positions Planned
-
-</div>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-50+
-
-</div>
-
-<div class="text-slate-500">
-
-Interview Questions Developed
-
-</div>
-
-</div>
-
-</div>
-
-<hr class="my-6">
-
-<h5 class="font-bold mb-4">
-
-Core Competencies
-
-</h5>
-
-<div class="flex flex-wrap gap-2">
-
-<span class="badge">Recruitment</span>
-
-<span class="badge">Interviewing</span>
-
-<span class="badge">Talent Acquisition</span>
-
-<span class="badge">Stakeholder Management</span>
-
-<span class="badge">Workforce Planning</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ========================== -->
-
-<!-- AGRONOMIST -->
-
-<!-- ========================== -->
-
-<div class="card p-10">
-
-<div class="flex flex-col lg:flex-row justify-between gap-6 mb-10">
-
-<div>
-
-<h3 class="text-3xl font-black">
-
-Agronomist Intern
-
-</h3>
-
-<p class="text-slate-500 mt-2">
-
-PT Habibi Digital Nusantara • Bandung
-
-</p>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-Jul 2024 – Aug 2024
-
-</div>
-
-</div>
-
-</div>
-
-<p class="text-slate-600 dark:text-slate-300 leading-8 mb-8">
-
-Strengthened analytical thinking, operational planning, quality monitoring, and problem-solving through greenhouse operations and crop performance analysis.
-
-</p>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300 leading-8">
-
-<li>
-
-Monitored performance of <strong>750+ crop plants</strong> across three cultivation zones through routine inspections and field observations.
-
-</li>
-
-<li>
-
-Coordinated preparation of more than <strong>250 planting media</strong> to support efficient cultivation operations.
-
-</li>
-
-<li>
-
-Executed greenhouse operational activities including irrigation, fertilization, sanitation, and pest monitoring while maintaining operational standards.
-
-</li>
-
-</ul>
-
-<div class="flex flex-wrap gap-3 mt-8">
-
-<span class="badge">Operational Excellence</span>
-
-<span class="badge">Problem Solving</span>
-
-<span class="badge">Quality Control</span>
-
-<span class="badge">Data Observation</span>
-
-<span class="badge">Project Execution</span>
-
-</div>
-
-</div>
-
-<!-- ========================== -->
-
-<!-- LAB -->
-
-<!-- ========================== -->
-
-<div class="card p-10">
-
-<div class="flex justify-between flex-col lg:flex-row gap-6 mb-10">
-
-<div>
-
-<h3 class="text-3xl font-black">
-
-Laboratory Assistant
-
-</h3>
-
-<p class="text-slate-500 mt-2">
-
-CV. Bintang Asri Arthauli • Bandung
-
-</p>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-Jul 2025 – Aug 2025
-
-</div>
-
-</div>
-
-</div>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300 leading-8">
-
-<li>
-
-Prepared laboratory equipment supporting more than <strong>20 laboratory activities</strong>.
-
-</li>
-
-<li>
-
-Performed and documented <strong>30+ laboratory analyses</strong> following standardized SOPs.
-
-</li>
-
-<li>
-
-Managed sterilization procedures and inventory of <strong>50+ laboratory assets</strong>, ensuring operational readiness and compliance.
-
-</li>
-
-</ul>
-
-<div class="flex flex-wrap gap-3 mt-8">
-
-<span class="badge">
-
-Documentation
-
-</span>
-
-<span class="badge">
-
-Quality Assurance
-
-</span>
-
-<span class="badge">
-
-Operational Support
-
-</span>
-
-<span class="badge">
-
-Attention to Detail
-
-</span>
-
-<span class="badge">
-
-SOP Compliance
-
-</span>
-
-</div>
-
-</div>
-
-<!-- ========================== -->
-
-<!-- REGENT -->
-
-<!-- ========================== -->
-
-<div class="card p-10">
-
-<div class="flex justify-between flex-col lg:flex-row gap-6 mb-10">
-
-<div>
-
-<h3 class="text-3xl font-black">
-
-Millennial Adjutant of Banyumas Regent
-
-</h3>
-
-<p class="text-slate-500 mt-2">
-
-Banyumas Regent Office
-
-</p>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-Nov 2021 – Dec 2021
-
-</div>
-
-</div>
-
-</div>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300 leading-8">
-
-<li>
-
-Selected as <strong>1 of 10 participants</strong> from more than 200 applicants.
-
-</li>
-
-<li>
-
-Coordinated regional events involving multiple government stakeholders.
-
-</li>
-
-<li>
-
-Managed operational readiness and logistics for official leadership activities.
-
-</li>
-
-<li>
-
-Supported public engagement initiatives and cross-functional coordination.
-
-</li>
-
-</ul>
-
-<div class="flex flex-wrap gap-3 mt-8">
-
-<span class="badge">
-
-Leadership
-
-</span>
-
-<span class="badge">
-
-Government Relations
-
-</span>
-
-<span class="badge">
-
-Stakeholder Management
-
-</span>
-
-<span class="badge">
-
-Project Coordination
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<a href="#projects" class="hover:text-blue-600 transition">
-    Projects
-</a>
-
-<!-- ================= PROJECTS ================= -->
-
-<section id="projects" class="section-space px-6 bg-white dark:bg-slate-950">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-20">
-
-<span class="badge mb-6">
-
-Featured Projects
-
-</span>
-
-<h2 class="section-title mb-8">
-
-Selected Projects That
-
-<br>
-
-Demonstrate My Capabilities
-
-</h2>
-
-<p class="section-subtitle">
-
-A selection of projects that showcase my ability to solve problems, lead initiatives, collaborate with stakeholders, manage operations, and create measurable outcomes across recruitment, organizational development, research, and business environments.
-
-</p>
-
-</div>
-
-<div class="space-y-10">
-
-<!-- ================================= -->
-
-<!-- PROJECT 1 -->
-
-<!-- ================================= -->
-
-<div class="card p-10">
-
-<div class="flex flex-col lg:flex-row justify-between gap-8 mb-10">
-
-<div>
-
-<span class="inline-block bg-blue-100 text-blue-700 font-semibold px-4 py-2 rounded-full mb-5">
-
-Human Resources
-
-</span>
-
-<h3 class="text-4xl font-black">
-
-Recruitment Process Optimization
-
-</h3>
-
-<p class="text-slate-500 mt-3">
-
-Bakti Milenial Foundation
-
-</p>
-
-</div>
-
-<div class="text-left lg:text-right">
-
-<div class="font-semibold">
-
-People & Culture Associate
-
-</div>
-
-<div class="text-slate-500 mt-2">
-
-2025
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid lg:grid-cols-2 gap-10">
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Objective
-
-</h4>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Improve recruitment quality through structured competency-based interviews, standardized assessment methods, and workforce planning.
-
-</p>
-
-<h4 class="font-bold text-xl mt-8 mb-5">
-
-My Role
-
-</h4>
-
-<ul class="space-y-3 text-slate-600 dark:text-slate-300">
-
-<li>• Interviewed 300+ applicants</li>
-
-<li>• Developed interview frameworks</li>
-
-<li>• Supported workforce planning</li>
-
-<li>• Collaborated with stakeholders</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Business Result
-
-</h4>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300">
-
-<li>
-
-Created standardized interview processes that improved evaluation consistency.
-
-</li>
-
-<li>
-
-Contributed to better candidate-role alignment across 17 organizational positions.
-
-</li>
-
-<li>
-
-Supported more objective recruitment decisions using competency-based assessments.
-
-</li>
-
-</ul>
-
-<div class="mt-8">
-
-<h4 class="font-bold mb-4">
-
-Skills Applied
-
-</h4>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="badge">Recruitment</span>
-
-<span class="badge">Talent Acquisition</span>
-
-<span class="badge">Interviewing</span>
-
-<span class="badge">Stakeholder Management</span>
-
-<span class="badge">Problem Solving</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ================================= -->
-
-<!-- PROJECT 2 -->
-
-<!-- ================================= -->
-
-<div class="card p-10">
-
-<div class="flex flex-col lg:flex-row justify-between gap-8 mb-10">
-
-<div>
-
-<span class="inline-block bg-emerald-100 text-emerald-700 font-semibold px-4 py-2 rounded-full mb-5">
-
-Leadership
-
-</span>
-
-<h3 class="text-4xl font-black">
-
-Human Resource Development Program
-
-</h3>
-
-<p class="text-slate-500 mt-3">
-
-BEM KMFP Universitas Padjadjaran
-
-</p>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-Deputy Head of HRM
-
-</div>
-
-<div class="text-slate-500 mt-2">
-
-2024
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid lg:grid-cols-2 gap-10">
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Objective
-
-</h4>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Strengthen organizational performance through leadership development, mentoring, structured evaluations, and cross-department collaboration.
-
-</p>
-
-<h4 class="font-bold text-xl mt-8 mb-5">
-
-Responsibilities
-
-</h4>
-
-<ul class="space-y-3 text-slate-600 dark:text-slate-300">
-
-<li>• Led 14 HR staff</li>
-
-<li>• Mentored 200+ members</li>
-
-<li>• Managed HR programs</li>
-
-<li>• Coordinated stakeholders</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Result
-
-</h4>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300">
-
-<li>
-
-Improved collaboration between HR and organizational departments.
-
-</li>
-
-<li>
-
-Supported continuous member development through structured mentoring.
-
-</li>
-
-<li>
-
-Successfully executed HR initiatives involving more than 200 participants.
-
-</li>
-
-</ul>
-
-<div class="mt-8">
-
-<h4 class="font-bold mb-4">
-
-Skills Applied
-
-</h4>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="badge">Leadership</span>
-
-<span class="badge">Coaching</span>
-
-<span class="badge">People Development</span>
-
-<span class="badge">Project Management</span>
-
-<span class="badge">Communication</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ================================= -->
-
-<!-- PROJECT 3 -->
-
-<!-- ================================= -->
-
-<div class="card p-10">
-
-<div class="flex flex-col lg:flex-row justify-between gap-8 mb-10">
-
-<div>
-
-<span class="inline-block bg-purple-100 text-purple-700 font-semibold px-4 py-2 rounded-full mb-5">
-
-Research
-
-</span>
-
-<h3 class="text-4xl font-black">
-
-International Scientific Publication
-
-</h3>
-
-<p class="text-slate-500 mt-3">
-
-First Author & Co-Author
-
-</p>
-
-</div>
-
-<div>
-
-<div class="font-semibold">
-
-2026
-
-</div>
-
-</div>
-
-</div>
-
-<div class="grid lg:grid-cols-2 gap-10">
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Objective
-
-</h4>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Produce evidence-based scientific publications by synthesizing recent international research and translating complex findings into practical insights.
-
-</p>
-
-<h4 class="font-bold text-xl mt-8 mb-5">
-
-Activities
-
-</h4>
-
-<ul class="space-y-3 text-slate-600 dark:text-slate-300">
-
-<li>• Literature review</li>
-
-<li>• Critical analysis</li>
-
-<li>• Scientific writing</li>
-
-<li>• Journal publication</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="font-bold text-xl mb-5">
-
-Result
-
-</h4>
-
-<ul class="space-y-4 text-slate-600 dark:text-slate-300">
-
-<li>
-
-Published peer-reviewed international journal articles.
-
-</li>
-
-<li>
-
-Strengthened analytical reasoning and structured problem-solving skills.
-
-</li>
-
-<li>
-
-Enhanced scientific communication and research capabilities.
-
-</li>
-
-</ul>
-
-<div class="mt-8">
-
-<h4 class="font-bold mb-4">
-
-Skills Applied
-
-</h4>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="badge">Research</span>
-
-<span class="badge">Analytical Thinking</span>
-
-<span class="badge">Scientific Writing</span>
-
-<span class="badge">Critical Thinking</span>
-
-<span class="badge">Data Analysis</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="achievements"
-
-<!-- ================= EXECUTIVE CREDENTIALS ================= -->
-
-<section id="achievements" class="section-space px-6 bg-slate-50 dark:bg-slate-900">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-20">
-
-<span class="badge mb-6">
-
-Executive Credentials
-
-</span>
-
-<h2 class="section-title mb-8">
-
-Achievements That
-
-<br>
-
-Support My Professional Value
-
-</h2>
-
-<p class="section-subtitle">
-
-A collection of academic achievements, international publications, professional certifications, leadership recognitions, and competitive accomplishments that reflect continuous learning, analytical capability, and commitment to professional excellence.
-
-</p>
-
-</div>
-
-<!-- ========================================= -->
-
-<!-- FEATURED -->
-
-<!-- ========================================= -->
-
-<div class="grid lg:grid-cols-2 gap-8 mb-10">
-
-<div class="card p-10 border-l-8 border-blue-600">
-
-<div class="text-sm uppercase tracking-widest text-blue-600 font-bold mb-4">
-
-Featured Achievement
-
-</div>
-
-<h3 class="text-3xl font-black mb-5">
-
-First Author — International Scientific Journal
-
-</h3>
-
-<p class="text-slate-600 dark:text-slate-300 leading-8">
-
-Published a peer-reviewed international review article as the first author, demonstrating advanced research capability, structured analytical thinking, academic writing, and evidence-based problem solving.
-
-</p>
-
-<div class="mt-8 flex flex-wrap gap-3">
-
-<span class="badge">
-
-Research
-
-</span>
-
-<span class="badge">
-
-Critical Thinking
-
-</span>
-
-<span class="badge">
-
-Scientific Writing
-
-</span>
-
-<span class="badge">
-
-Publication
-
-</span>
-
-</div>
-
-</div>
-
-<div class="card p-10 border-l-8 border-emerald-600">
-
-<div class="text-sm uppercase tracking-widest text-emerald-600 font-bold mb-4">
-
-Featured Achievement
-
-</div>
-
-<h3 class="text-3xl font-black mb-5">
-
-Human Resources Professional Development
-
-</h3>
-
-<p class="text-slate-600 dark:text-slate-300 leading-8">
-
-Completed intensive Human Resources and Talent Acquisition development programs covering recruitment, HR analytics, KPI–OKR, HRBP fundamentals, talent management, SOP development, and HR reporting.
-
-</p>
-
-<div class="mt-8 flex flex-wrap gap-3">
-
-<span class="badge">
-
-Recruitment
-
-</span>
-
-<span class="badge">
-
-HR Analytics
-
-</span>
-
-<span class="badge">
-
-Talent Management
-
-</span>
-
-<span class="badge">
-
-HRBP
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ========================================= -->
-
-<!-- GRID -->
-
-<!-- ========================================= -->
-
-<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-
-<!-- 1 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-🎓
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-PCMK Scholarship Awardee
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Selected as a scholarship recipient based on academic achievement, organizational contribution, leadership potential, and personal development.
-
-</p>
-
-</div>
-
-<!-- 2 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-📚
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-International Journal Publications
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Published peer-reviewed international journal articles as both First Author and Co-Author in the fields of sustainable agriculture and applied biological sciences.
-
-</p>
-
-</div>
-
-<!-- 3 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-🗣
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-Guest Speaker
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Invited as a speaker in the Human Resource Management Upgrading Program, sharing leadership and organizational development insights.
-
-</p>
-
-</div>
-
-<!-- 4 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-🏆
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-Innovation Competition
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-1st Runner-up at a provincial innovation competition organized by IPB University for sustainable environmental innovation.
-
-</p>
-
-</div>
-
-<!-- 5 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-🌍
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-English Proficiency
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-TOEPS Prediction Score: <strong>560</strong>, demonstrating the ability to communicate effectively in professional and academic environments.
-
-</p>
-
-</div>
-
-<!-- 6 -->
-
-<div class="card p-8">
-
-<div class="text-5xl mb-6">
-
-⭐
-
-</div>
-
-<h3 class="text-2xl font-black mb-4">
-
-Best Staff Recognition
-
-</h3>
-
-<p class="leading-8 text-slate-600 dark:text-slate-300">
-
-Awarded Best Staff of the Month for outstanding commitment, teamwork, initiative, and organizational contribution.
-
-</p>
-
-</div>
-
-</div>
-
-<!-- ========================================= -->
-
-<!-- CERTIFICATIONS -->
-
-<!-- ========================================= -->
-
-<div class="mt-20">
-
-<div class="flex items-center justify-between mb-10">
-
-<div>
-
-<h3 class="text-4xl font-black">
-
-Professional Certifications
-
-</h3>
-
-<p class="text-slate-500 mt-3">
-
-Continuous learning through industry-focused professional development.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-<div class="card p-8">
-
-<h4 class="text-xl font-black mb-5">
-
-Human Resources & Talent Acquisition Bootcamp
-
-</h4>
-
-<ul class="space-y-3 text-slate-600 dark:text-slate-300">
-
-<li>Recruitment & Selection</li>
-
-<li>Talent Management</li>
-
-<li>HRBP Fundamentals</li>
-
-<li>HRIS</li>
-
-<li>KPI & OKR</li>
-
-<li>SOP Development</li>
-
-</ul>
-
-</div>
-
-<div class="card p-8">
-
-<h4 class="text-xl font-black mb-5">
-
-Microsoft Excel for Human Resources
-
-</h4>
-
-<ul class="space-y-3 text-slate-600 dark:text-slate-300">
-
-<li>Pivot Table</li>
-
-<li>Dashboard</li>
-
-<li>HR Analytics</li>
-
-<li>Data Visualization</li>
-
-<li>Reporting</li>
-
-</ul>
-
-</div>
-
-<div class="card p-8">
-
-<h4 class="text-xl font-black mb-5">
-
-Professional Development Focus
-
-</h4>
-
-<div class="flex flex-wrap gap-3">
-
-<span class="badge">
-
-Continuous Learning
-
-</span>
-
-<span class="badge">
-
-Business Acumen
-
-</span>
-
-<span class="badge">
-
-Data Literacy
-
-</span>
-
-<span class="badge">
-
-Leadership
-
-</span>
-
-<span class="badge">
-
-Analytical Thinking
-
-</span>
-
-<span class="badge">
-
-Corporate Readiness
-
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<a href="#skills" class="hover:text-blue-600 transition">
-    Skills
-</a>
-
-<!-- ================= PROFESSIONAL SKILLS ================= -->
-
-<section id="skills" class="section-space px-6 bg-white dark:bg-slate-950">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="text-center mb-20">
-
-<span class="badge mb-6">
-
-Professional Skills
-
-</span>
-
-<h2 class="section-title mb-8">
-
-Capabilities That Create
-
-<br>
-
-Business Value
-
-</h2>
-
-<p class="section-subtitle">
-
-A balanced combination of business, analytical, digital, leadership, and operational capabilities developed through professional experience, organizational leadership, academic research, and continuous learning.
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-2 gap-8">
-
-<!-- ================= -->
-
-<!-- BUSINESS -->
-
-<!-- ================= -->
-
-<div class="card p-10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Business Skills
-
-</h3>
-
-<div class="grid grid-cols-2 gap-4">
-
-<span class="badge">Recruitment & Selection</span>
-
-<span class="badge">Talent Acquisition</span>
-
-<span class="badge">People Development</span>
-
-<span class="badge">Workforce Planning</span>
-
-<span class="badge">Stakeholder Management</span>
-
-<span class="badge">Employee Engagement</span>
-
-<span class="badge">Project Coordination</span>
-
-<span class="badge">Business Communication</span>
-
-<span class="badge">Presentation</span>
-
-<span class="badge">Organizational Development</span>
-
-<span class="badge">Continuous Improvement</span>
-
-<span class="badge">Administrative Support</span>
-
-</div>
-
-</div>
-
-<!-- ================= -->
-
-<!-- LEADERSHIP -->
-
-<!-- ================= -->
-
-<div class="card p-10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Leadership Skills
-
-</h3>
-
-<div class="grid grid-cols-2 gap-4">
-
-<span class="badge">Team Leadership</span>
-
-<span class="badge">Coaching</span>
-
-<span class="badge">Mentoring</span>
-
-<span class="badge">Decision Making</span>
-
-<span class="badge">Conflict Resolution</span>
-
-<span class="badge">Cross-functional Collaboration</span>
-
-<span class="badge">Strategic Thinking</span>
-
-<span class="badge">Problem Solving</span>
-
-<span class="badge">Adaptability</span>
-
-<span class="badge">Initiative</span>
-
-<span class="badge">Execution Excellence</span>
-
-<span class="badge">Ownership</span>
-
-</div>
-
-</div>
-
-<!-- ================= -->
-
-<!-- ANALYTICAL -->
-
-<!-- ================= -->
-
-<div class="card p-10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Analytical & Data Skills
-
-</h3>
-
-<div class="grid grid-cols-2 gap-4">
-
-<span class="badge">Data Analysis</span>
-
-<span class="badge">HR Analytics</span>
-
-<span class="badge">Reporting</span>
-
-<span class="badge">Data Visualization</span>
-
-<span class="badge">Research</span>
-
-<span class="badge">Critical Thinking</span>
-
-<span class="badge">Scientific Writing</span>
-
-<span class="badge">Documentation</span>
-
-<span class="badge">Quality Assurance</span>
-
-<span class="badge">Operational Analysis</span>
-
-<span class="badge">Attention to Detail</span>
-
-<span class="badge">Root Cause Analysis</span>
-
-</div>
-
-</div>
-
-<!-- ================= -->
-
-<!-- DIGITAL -->
-
-<!-- ================= -->
-
-<div class="card p-10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Digital & Productivity Tools
-
-</h3>
-
-<div class="grid grid-cols-2 gap-4">
-
-<span class="badge">Microsoft Excel</span>
-
-<span class="badge">Microsoft Word</span>
-
-<span class="badge">Microsoft PowerPoint</span>
-
-<span class="badge">Google Sheets</span>
-
-<span class="badge">Google Docs</span>
-
-<span class="badge">Google Slides</span>
-
-<span class="badge">Google Workspace</span>
-
-<span class="badge">Canva</span>
-
-<span class="badge">Microsoft Teams</span>
-
-<span class="badge">Zoom</span>
-
-<span class="badge">HR Documentation</span>
-
-<span class="badge">Presentation Design</span>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ============================= -->
-
-<!-- STRENGTH SUMMARY -->
-
-<!-- ============================= -->
-
-<div class="mt-20">
-
-<div class="card p-10">
-
-<div class="grid lg:grid-cols-5 gap-8">
-
-<div>
-
-<h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-
-Leadership
-
-</h4>
-
-<div class="text-4xl font-black">
-
-★★★★★
-
-</div>
-
-</div>
-
-<div>
-
-<h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-
-Communication
-
-</h4>
-
-<div class="text-4xl font-black">
-
-★★★★★
-
-</div>
-
-</div>
-
-<div>
-
-<h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-
-Analytical Thinking
-
-</h4>
-
-<div class="text-4xl font-black">
-
-★★★★★
-
-</div>
-
-</div>
-
-<div>
-
-<h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-
-Business Mindset
-
-</h4>
-
-<div class="text-4xl font-black">
-
-★★★★★
-
-</div>
-
-</div>
-
-<div>
-
-<h4 class="text-sm uppercase tracking-widest text-slate-500 mb-3">
-
-Learning Agility
-
-</h4>
-
-<div class="text-4xl font-black">
-
-★★★★★
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section-space px-6 bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="grid lg:grid-cols-2 gap-16 items-center">
-
-<!-- LEFT -->
-
-<div>
-
-<span class="inline-block bg-blue-500/20 text-blue-300 px-5 py-2 rounded-full mb-8">
-
-Let's Build Something Meaningful
-
-</span>
-
-<h2 class="text-5xl font-black leading-tight mb-8">
-
-Ready to Contribute,
-
-<br>
-
-Ready to Learn,
-
-<br>
-
-Ready to Grow.
-
-</h2>
-
-<p class="text-xl leading-9 text-slate-300">
-
-I am passionate about contributing to organizations that value continuous learning, innovation, collaboration, and long-term leadership development. I am currently seeking opportunities in Management Trainee, Human Resources, Talent Acquisition, People Development, Business Operations, and Corporate Leadership Programs.
-
-</p>
-
-<div class="mt-10 flex flex-wrap gap-4">
-
-<span class="badge">
-
-Available for Full-Time
-
-</span>
-
-<span class="badge">
-
-Open to Relocation
-
-</span>
-
-<span class="badge">
-
-Immediate Interview
-
-</span>
-
-</div>
-
-</div>
-
-<!-- RIGHT -->
-
-<div>
-
-<div class="bg-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/10">
-
-<h3 class="text-3xl font-black mb-8">
-
-Contact Information
-
-</h3>
-
-<div class="space-y-8">
-
-<div>
-
-<p class="text-sm uppercase tracking-widest text-slate-400">
-
-Email
-
-</p>
-
-<a href="mailto:rafialiakbar01@gmail.com"
-
-class="text-xl font-semibold hover:text-blue-400 transition">
-
-rafialiakbar01@gmail.com
-
-</a>
-
-</div>
-
-<div>
-
-<p class="text-sm uppercase tracking-widest text-slate-400">
-
-Phone
-
-</p>
-
-<a href="tel:+6285385511485"
-
-class="text-xl font-semibold hover:text-blue-400 transition">
-
-+62 853-8551-1485
-
-</a>
-
-</div>
-
-<div>
-
-<p class="text-sm uppercase tracking-widest text-slate-400">
-
-LinkedIn
-
-</p>
-
-<a href="#"
-
-class="text-xl font-semibold hover:text-blue-400 transition">
-
-linkedin.com/in/rafialiakbar
-
-</a>
-
-</div>
-
-<div>
-
-<p class="text-sm uppercase tracking-widest text-slate-400">
-
-Location
-
-</p>
-
-<p class="text-xl font-semibold">
-
-Indonesia
-
-</p>
-
-</div>
-
-</div>
-
-<div class="grid grid-cols-2 gap-5 mt-10">
-
-<a href="#"
-
-class="bg-blue-600 hover:bg-blue-700 rounded-xl py-4 text-center font-bold transition">
-
-Download Resume
-
-</a>
-
-<a href="mailto:rafialiakbar01@gmail.com"
-
-class="border border-white/20 hover:bg-white hover:text-black rounded-xl py-4 text-center font-bold transition">
-
-Send Email
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-  <section class="px-6 py-20 bg-white dark:bg-slate-950">
-
-<div class="max-w-7xl mx-auto">
-
-<div class="card p-12">
-
-<div class="grid lg:grid-cols-4 gap-8 text-center">
-
-<div>
-
-<h3 class="text-5xl font-black text-blue-600">
-
-300+
-
-</h3>
-
-<p class="mt-3">
-
-Candidates Interviewed
-
-</p>
-
-</div>
-
-<div>
-
-<h3 class="text-5xl font-black text-blue-600">
-
-17
-
-</h3>
-
-<p class="mt-3">
-
-Hiring Positions Supported
-
-</p>
-
-</div>
-
-<div>
-
-<h3 class="text-5xl font-black text-blue-600">
-
-200+
-
-</h3>
-
-<p class="mt-3">
-
-Members Mentored
-
-</p>
-
-</div>
-
-<div>
-
-<h3 class="text-5xl font-black text-blue-600">
-
-5+
-
-</h3>
-
-<p class="mt-3">
-
-Leadership Roles
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-  <footer class="bg-black text-slate-400 py-14">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid lg:grid-cols-3 gap-10">
-
-<div>
-
-<h3 class="text-2xl font-black text-white mb-4">
-
-Rafi Ali Akbar
-
-</h3>
-
-<p class="leading-8">
-
-Aspiring Management Trainee and Human Resources Professional committed to developing people, improving organizations, and creating sustainable business impact.
-
-</p>
-
-</div>
-
-<div>
-
-<h4 class="font-bold text-white mb-5">
-
-Career Interests
-
-</h4>
-
-<ul class="space-y-3">
-
-<li>Management Trainee</li>
-
-<li>Human Resources</li>
-
-<li>Talent Acquisition</li>
-
-<li>People Development</li>
-
-<li>Business Operations</li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4 class="font-bold text-white mb-5">
-
-Professional Values
-
-</h4>
-
-<ul class="space-y-3">
-
-<li>Integrity</li>
-
-<li>Leadership</li>
-
-<li>Continuous Learning</li>
-
-<li>Collaboration</li>
-
-<li>Innovation</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<hr class="border-white/10 my-10">
-
-<div class="flex flex-col lg:flex-row justify-between items-center gap-6">
-
-<p>
-
-© 2026 Rafi Ali Akbar. All Rights Reserved.
-
-</p>
-
-<p>
-
-Designed & Developed with HTML, Tailwind CSS, and JavaScript.
-
-</p>
-
-</div>
-
-</div>
-
-</footer>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-28 px-6 bg-white dark:bg-ink-soft/40 border-y border-ink/10 dark:border-sand/10">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">Capabilities</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold mb-4">Skills & Tools</h2>
+        <p class="text-ink/60 dark:text-sand/60 max-w-2xl leading-relaxed">
+          Core competencies developed through recruitment work and organizational leadership, supported by day-to-day productivity tools.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-16">
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink/50 dark:text-sand/50 mb-6">Core Competencies</h3>
+          <div class="grid sm:grid-cols-2 gap-x-8 gap-y-5">
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">Recruitment & Selection</p><p class="text-xs text-ink/55 dark:text-sand/55">Candidate screening & evaluation</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">Workforce Planning</p><p class="text-xs text-ink/55 dark:text-sand/55">Job analysis & manpower planning</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">Leadership & Mentoring</p><p class="text-xs text-ink/55 dark:text-sand/55">Team supervision & development</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">Stakeholder Management</p><p class="text-xs text-ink/55 dark:text-sand/55">Cross-functional coordination</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">HR Data & Reporting</p><p class="text-xs text-ink/55 dark:text-sand/55">Metrics, dashboards, KPI tracking</p></div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brass mt-2"></span>
+              <div><p class="font-semibold text-sm">Public Speaking</p><p class="text-xs text-ink/55 dark:text-sand/55">Presentations & facilitation</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink/50 dark:text-sand/50 mb-6">Tools</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+
+            <div class="flex items-center gap-4 border border-ink/10 dark:border-sand/15 rounded-lg p-4">
+              <div class="w-10 h-10 rounded-md bg-brass/10 text-brass flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <div><p class="font-semibold text-sm">Microsoft Excel</p><p class="text-xs text-ink/55 dark:text-sand/55">HR analytics & reporting</p></div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-ink/10 dark:border-sand/15 rounded-lg p-4">
+              <div class="w-10 h-10 rounded-md bg-brass/10 text-brass flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h6M9 17h6"/></svg>
+              </div>
+              <div><p class="font-semibold text-sm">Microsoft Word</p><p class="text-xs text-ink/55 dark:text-sand/55">Documentation</p></div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-ink/10 dark:border-sand/15 rounded-lg p-4">
+              <div class="w-10 h-10 rounded-md bg-brass/10 text-brass flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+              </div>
+              <div><p class="font-semibold text-sm">Google Workspace</p><p class="text-xs text-ink/55 dark:text-sand/55">Sheets, Docs & collaboration</p></div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-ink/10 dark:border-sand/15 rounded-lg p-4">
+              <div class="w-10 h-10 rounded-md bg-brass/10 text-brass flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+              </div>
+              <div><p class="font-semibold text-sm">Canva</p><p class="text-xs text-ink/55 dark:text-sand/55">Presentation & visual design</p></div>
+            </div>
+
+            <div class="flex items-center gap-4 border border-ink/10 dark:border-sand/15 rounded-lg p-4 sm:col-span-2">
+              <div class="w-10 h-10 rounded-md bg-brass/10 text-brass flex items-center justify-center shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10l5-3v10l-5-3"/><rect x="1" y="6" width="14" height="12" rx="2"/></svg>
+              </div>
+              <div><p class="font-semibold text-sm">Microsoft Teams</p><p class="text-xs text-ink/55 dark:text-sand/55">Virtual meetings & communication</p></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-28 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-16">
+        <p class="text-xs uppercase tracking-[0.2em] text-brass font-semibold mb-3">In the Field</p>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold">Gallery</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+        <figure class="overflow-hidden rounded-xl border border-ink/10 dark:border-sand/15">
+          <img src="organization-1.jpg" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" alt="Organization Activity">
+        </figure>
+        <figure class="overflow-hidden rounded-xl border border-ink/10 dark:border-sand/15">
+          <img src="organization-2.jpg" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" alt="Leadership Activity">
+        </figure>
+        <figure class="overflow-hidden rounded-xl border border-ink/10 dark:border-sand/15">
+          <img src="speaker-session.jpg" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" alt="Speaker Session">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-28 px-6 bg-ink text-sand dark:bg-[#0B0F17]">
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-xs uppercase tracking-[0.2em] text-brass-light font-semibold mb-4">Let's Connect</p>
+      <h2 class="text-4xl md:text-5xl font-display font-semibold mb-6">Ready for the next role.</h2>
+      <p class="text-sand/70 mb-12 leading-relaxed max-w-xl mx-auto">
+        Open to opportunities in Human Resources, People & Culture, Talent Acquisition, and Management Trainee programs.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4 mb-16">
+        <a href="mailto:rafialiakbar01@gmail.com" class="bg-brass text-ink px-8 py-4 rounded-md font-semibold text-sm hover:bg-brass-light transition-colors duration-300">
+          Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/rafialiakbar" target="_blank" rel="noopener" class="border border-sand/25 px-8 py-4 rounded-md font-semibold text-sm hover:border-brass hover:text-brass-light transition-colors duration-300">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-8 pt-10 border-t border-sand/15 text-left">
+        <div>
+          <h4 class="font-display font-semibold text-lg mb-2">Integrity</h4>
+          <p class="text-sand/60 text-sm leading-relaxed">Professionalism and accountability in every commitment.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-lg mb-2">Collaboration</h4>
+          <p class="text-sand/60 text-sm leading-relaxed">Building alignment across teams and stakeholders.</p>
+        </div>
+        <div>
+          <h4 class="font-display font-semibold text-lg mb-2">Growth</h4>
+          <p class="text-sand/60 text-sm leading-relaxed">Continuous learning applied to people and process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 px-6 text-center text-xs text-ink/45 dark:text-sand/40 border-t border-ink/10 dark:border-sand/10">
+    <p class="mb-1">© 2026 Rafi Ali Akbar. All rights reserved.</p>
+    <p>Human Resources · People & Culture · Management Trainee</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+
+    // Sticky nav border appears after scroll
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        nav.classList.add('border-ink/10', 'dark:border-sand/10', 'shadow-sm');
+      } else {
+        nav.classList.remove('border-ink/10', 'dark:border-sand/10', 'shadow-sm');
+      }
+    });
+
+    // Scroll-reveal animation
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
